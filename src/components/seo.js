@@ -77,6 +77,7 @@ SEO.defaultProps = {
   lang: `en`,
   meta: [],
   description: ``,
+  title: `Brenden Walters /\/\ Web Developer`
 }
 
 SEO.propTypes = {
