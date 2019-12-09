@@ -15,13 +15,13 @@ const Instagram = () => {
       }
     }
   `)
-  console.log(feed);
+  // Sort feed from most recent to oldest post
+  const feedSort = feed.allInstaNode.edges.sort((a,b) => b.node.timestamp - a.node.timestamp);
   return (
     <div className="instagram-feed">
-      {feed.allInstaNode.edges.map(({node}) => (
+      {feedSort.map(({node}) => (
         <div className="instagram-item">
           <img src={node.preview} alt=""/>
-          
         </div>
       ))}
     </div>
