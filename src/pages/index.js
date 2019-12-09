@@ -11,6 +11,7 @@ import Portfolio from "../components/Portfolio/Portfolio"
 import Experience from "../components/Experience/Experience"
 import Photog from "../components/Photog/Photog"
 import Contact from "../components/Contact/Contact"
+import Instagram from "../components/Instagram-feed/Instagram-feed"
 
 const IndexPage = () => (
   <Layout>
@@ -22,6 +23,7 @@ const IndexPage = () => (
     <Experience />
     <Photog />
     <Contact />
+    <Instagram />
     <h1>Hi people</h1>
     <p>Welcome to your new Gatsby site.</p>
     <p>Now go build something great.</p>
