@@ -4,7 +4,7 @@ import { useStaticQuery, graphql } from "gatsby"
 const Instagram = () => {
   const feed = useStaticQuery(graphql`
     query {
-      allInstaNode(limit: 6) {
+      allInstaNode(limit: 12) {
         edges {
           node {
             preview
