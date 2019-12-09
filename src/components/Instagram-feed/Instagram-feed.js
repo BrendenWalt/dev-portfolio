@@ -7,6 +7,7 @@ const Instagram = () => {
       allInstaNode(limit: 12) {
         edges {
           node {
+            id
             preview
             original
             timestamp
@@ -16,11 +17,11 @@ const Instagram = () => {
     }
   `)
   // Sort feed from most recent to oldest post
-  const feedSort = feed.allInstaNode.edges.sort((a,b) => b.node.timestamp - a.node.timestamp);
+  const feedSort = feed.allInstaNode.edges.sort((a,b) => b.node.timestamp - a.node.timestamp).slice(0,6);
   return (
     <div className="instagram-feed">
       {feedSort.map(({node}) => (
-        <div className="instagram-item">
+        <div key={node.id} className="instagram-item">
           <img src={node.preview} alt=""/>
         </div>
       ))}
