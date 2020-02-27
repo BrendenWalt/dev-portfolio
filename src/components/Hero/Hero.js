@@ -8,7 +8,6 @@ const Hero = (props) => {
         <div className="container has-text-centered">
           <h1 className="title">{props.title}</h1>
           <h2 classname="subtitle">{props.subtitle}</h2>
-          <h3>Hello world</h3>
         </div>
       </div>
       
