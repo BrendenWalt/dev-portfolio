@@ -5,7 +5,6 @@ import "../styles/bulmaStyles.scss"
 import Layout from "../components/utils/layout"
 import Image from "../components/image"
 import SEO from "../components/seo"
-import Navigation from "../components/Nav/Navigation"
 import Hero from "../components/Hero/Hero"
 import About from "../components/About/About"
 import Portfolio from "../components/Portfolio/Portfolio"
@@ -18,7 +17,6 @@ const IndexPage = ({data}) => {
   return (
     <Layout>
       <SEO />
-      <Navigation />
       <Hero title={data.site.siteMetadata.title} subtitle={data.site.siteMetadata.subtitle}/>
       <About />
       <Portfolio />

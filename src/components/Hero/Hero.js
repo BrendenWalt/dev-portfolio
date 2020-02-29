@@ -10,7 +10,6 @@ const Hero = (props) => {
           <h2 classname="subtitle">{props.subtitle}</h2>
         </div>
       </div>
-      
     </div>
   )
 }
