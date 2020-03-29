@@ -1,19 +1,34 @@
 import { Link } from "gatsby"
 import { AnchorLink } from "gatsby-plugin-anchor-links"
+import { useStaticQuery, graphql } from "gatsby"
 import PropTypes from "prop-types"
 import React from "react"
+import Img from "gatsby-image"
 
-const Header = ({ siteTitle }) => (
-  <header>
-    <div
-      style={{
-        margin: `0 auto`,
-        maxWidth: 960,
-        padding: `1.45rem 1.0875rem`,
-      }}
-    >
-      <div>
-        <h1 style={{ margin: 0 }}>
+const Header = ({ siteTitle }) => {
+
+  const data = useStaticQuery(graphql`
+    query siteLogoQuery {
+      file(relativePath: { eq: "placeholder_logo.png" }) {
+        childImageSharp {
+          fluid(maxWidth: 300) {
+            ...GatsbyImageSharpFluid
+          }
+        }
+      }
+    }
+  `)
+
+  return (
+    <header>
+      <div
+        style={{
+          margin: `0 auto`,
+          maxWidth: 960,
+          padding: `1.45rem 1.0875rem`,
+        }}
+      >
+        <div style={{ margin: 0 }}>
           <Link
             to="/"
             style={{
@@ -21,45 +36,46 @@ const Header = ({ siteTitle }) => (
               textDecoration: `none`,
             }}
           >
-            {siteTitle}
+            {/* {siteTitle} */}
+            <Img fluid={data.file.childImageSharp.fluid} />
           </Link>
-        </h1>
+        </div>
+        <div className="navigation-container">
+          <AnchorLink
+            to="/#about-me"
+            title="About"
+            className="nav-link"
+            stripHash
+          />
+          <AnchorLink
+            to="/#portfolio"
+            title="Portfolio"
+            classname="nav-link"
+            stripHash
+          />
+          <AnchorLink
+            to="/#experience"
+            title="Experience"
+            className="nav-link"
+            stripHash
+          />
+          <AnchorLink
+            to="/#photography"
+            title="Photography"
+            className="nav-link"
+            stripHash
+          />
+          <AnchorLink
+            to="/#contact"
+            title="Contact"
+            className="nav-link"
+            stripHash
+          />
+        </div>
       </div>
-      <div className="navigation-container">
-        <AnchorLink
-          to="/#about-me"
-          title="About"
-          className="nav-link"
-          stripHash
-        />
-        <AnchorLink
-          to="/#portfolio"
-          title="Portfolio"
-          classname="nav-link"
-          stripHash
-        />
-        <AnchorLink
-          to="/#experience"
-          title="Experience"
-          className="nav-link"
-          stripHash
-        />
-        <AnchorLink 
-          to="/#photography"
-          title="Photography"
-          className="nav-link"
-          stripHash
-        />
-        <AnchorLink 
-          to="/#contact"
-          title="Contact"
-          className="nav-link"
-          stripHash
-        />
-      </div>
-    </div>
-  </header>
-)
+    </header>
+  )
+}
 
 Header.propTypes = {
   siteTitle: PropTypes.string,

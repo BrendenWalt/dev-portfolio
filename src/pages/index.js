@@ -3,7 +3,6 @@ import {graphql} from "gatsby"
 import "../styles/bulmaStyles.scss"
 
 import Layout from "../components/utils/layout"
-import Image from "../components/image"
 import SEO from "../components/seo"
 import Hero from "../components/Hero/Hero"
 import About from "../components/About/About"
@@ -24,9 +23,6 @@ const IndexPage = ({data}) => {
       <Photog />
       <Instagram />
       <Contact />
-      <div>
-        <Image />
-      </div>
     </Layout>
   )
   
