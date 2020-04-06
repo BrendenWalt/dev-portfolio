@@ -21,7 +21,7 @@ const Experience = () => {
   )
   console.log(data);
   return (
-    <div className="experience-section">
+    <div className="experience-section" name="experience">
       <h2>Experience</h2>
       <div className="experience-list">
         {data.allResumeItemsJson.edges.map(({node}) => (

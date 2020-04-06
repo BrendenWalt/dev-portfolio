@@ -42,34 +42,29 @@ const Header = ({ siteTitle }) => {
         </div>
         <div className="navigation-container">
           <AnchorLink
-            to="/#about-me"
+            to="#about-me"
             title="About"
             className="nav-link"
-            stripHash
           />
           <AnchorLink
-            to="/#portfolio"
+            to="#portfolio"
             title="Portfolio"
             classname="nav-link"
-            stripHash
           />
           <AnchorLink
-            to="/#experience"
+            to="#experience"
             title="Experience"
             className="nav-link"
-            stripHash
           />
           <AnchorLink
-            to="/#photography"
+            to="#photography"
             title="Photography"
             className="nav-link"
-            stripHash
           />
           <AnchorLink
-            to="/#contact"
+            to="#contact"
             title="Contact"
             className="nav-link"
-            stripHash
           />
         </div>
       </div>

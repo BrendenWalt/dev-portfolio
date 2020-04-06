@@ -2,7 +2,7 @@ import React from "react"
 
 const Photog = () => {
   return (
-    <div>
+    <div class="photography-section" name="photography">
       Photography Samples
     </div>
   )
