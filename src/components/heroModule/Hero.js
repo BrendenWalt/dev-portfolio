@@ -7,7 +7,7 @@ const Hero = (props) => {
       <div className="hero-body">
         <div className="container has-text-centered">
           <h1 className="title">{props.title}</h1>
-          <h2 classname="subtitle">{props.subtitle}</h2>
+          <h2 className="subtitle">{props.subtitle}</h2>
         </div>
       </div>
     </div>

@@ -4,7 +4,7 @@ const Contact = () => {
   return (
     <div className="contact-form" name="contact">
       <form action="https://formspree.io/xgevdnrk" method="post">
-        <label for="name">
+        <label htmlFor="name">
           Name
           <input type="text" id="name" name="name" />
         </label>

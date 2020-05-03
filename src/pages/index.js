@@ -1,16 +1,17 @@
 import React from "react"
 import {graphql} from "gatsby"
 import "../styles/bulmaStyles.scss"
+import "../styles/general.scss"
 
 import Layout from "../components/utils/layout"
 import SEO from "../components/seo"
-import Hero from "../components/Hero/Hero"
-import About from "../components/About/About"
-import Portfolio from "../components/Portfolio/Portfolio"
-import Experience from "../components/Experience/Experience"
-import Photog from "../components/Photog/Photog"
-import Contact from "../components/Contact/Contact"
-import Instagram from "../components/Instagram-feed/Instagram-feed"
+import Hero from "../components/heroModule/Hero"
+import About from "../components/aboutModule/About"
+import Portfolio from "../components/portfolioModule/Portfolio"
+import Experience from "../components/experienceModule/Experience"
+import Photog from "../components/photogModule/Photog"
+import Contact from "../components/contactModule/Contact"
+import Instagram from "../components/instagramModule/Instagram-feed"
 
 const IndexPage = ({data}) => {
   return (
