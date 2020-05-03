@@ -2,6 +2,7 @@ import { Link } from "gatsby"
 import { useStaticQuery, graphql } from "gatsby"
 import PropTypes from "prop-types"
 import React from "react"
+import { AnchorLink } from "gatsby-plugin-anchor-links"
 import Img from "gatsby-image"
 
 import Styles from "./header.module.scss"
@@ -38,33 +39,43 @@ const Header = ({ siteTitle }) => {
         </div>
         <div className={Styles.navContainer}>
           <ul>
-            <li className={Styles.navLinK}>
-              <Link to="/#about-me" >
+            <li className={Styles.navLink}>
+              <AnchorLink
+                to="/#about-me"
+                stripHash
+              >
                 About
-              </Link>
+              </AnchorLink>
             </li>
-            <li>
-              <Link to="/#portfolio">
+            <li className={Styles.navLink}>
+              <AnchorLink 
+                to="/#portfolio"
+              >
                 Portfolio
-              </Link>
+              </AnchorLink>
             </li>
             <li className={Styles.navLink}>
-              <Link to="/#experience" >
+              <AnchorLink 
+                to="/#experience"
+              >
                 Experience
-              </Link>
+              </AnchorLink>
             </li>
             <li className={Styles.navLink}>
-              <Link to="/#photography">
+              <AnchorLink 
+                to="/#photography"
+              >
                 Photography
-              </Link>
+              </AnchorLink>
             </li>
             <li className={Styles.navLink}>
-              <Link to="/#contact">
+              <AnchorLink 
+                to="/#contact"
+              >
                 Contact
-              </Link>
+              </AnchorLink>
             </li>
           </ul>
-
         </div>
       </div>
     </header>
