@@ -13,7 +13,7 @@ const Header = ({ siteTitle }) => {
     query siteLogoQuery {
       file(relativePath: { eq: "placeholder_logo.png" }) {
         childImageSharp {
-          fluid(maxWidth: 300) {
+          fluid {
             ...GatsbyImageSharpFluid
           }
         }
@@ -23,14 +23,7 @@ const Header = ({ siteTitle }) => {
 
   return (
     <header className={Styles.header}>
-      <div
-        style={{
-          margin: `0 auto`,
-          maxWidth: 960,
-          padding: `1.45rem 1.0875rem`,
-        }}
-        className={Styles.headerContainer}
-      >
+      <div className={Styles.headerContainer} >
         <div className={Styles.headerLogo}>
           <Link to="/">
             {/* {siteTitle} */}
