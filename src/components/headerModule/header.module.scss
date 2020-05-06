@@ -1,13 +1,31 @@
 header.header {
   width: 100%;
+  position: fixed;
+  top: 0;
 }
 
 .headerContainer {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
   margin: 0 auto;
   max-width: 1400px;
-  padding: 1.45rem 1.0875rem
+  padding: 1.45rem 1.0875rem;
+
+}
+
+.headerLogo {
+  max-width: 200px;
+  width: 50%;
+  img {
+    height: auto;
+  }
 }
 
 .navContainer {
-  display: flex;
+  li {
+    display: inline-block;
+    margin: 0.5em 0.75em;
+  }
 }

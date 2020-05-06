@@ -7,6 +7,7 @@ import Layout from "../components/utils/layout"
 import SEO from "../components/seo"
 import Hero from "../components/heroModule/Hero"
 import About from "../components/aboutModule/About"
+import PhotoDivider from "../components/dividerModule/PhotoDivider"
 import Portfolio from "../components/portfolioModule/Portfolio"
 import Experience from "../components/experienceModule/Experience"
 import Photog from "../components/photogModule/Photog"
@@ -19,6 +20,7 @@ const IndexPage = ({data}) => {
       <SEO />
       <Hero title={data.site.siteMetadata.title} subtitle={data.site.siteMetadata.subtitle}/>
       <About />
+      <PhotoDivider />
       <Portfolio />
       <Experience />
       <Photog />
