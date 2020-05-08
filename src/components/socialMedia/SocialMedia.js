@@ -4,10 +4,11 @@ import { FaInstagram, FaLinkedin, FaGithub } from "react-icons/fa"
 
 import Styles from "./SocialMedia.module.scss"
 
-function SocialMedia() {
+const SocialMedia = (props) => {
 
   return(
-    <div className={Styles.socialmedia}>
+    <div className={`${Styles.socialmedia} ${props.isVertical ? Styles.socialmediaVertical : ''}`}>
+      <h2>{props.isVertical}</h2>
       <ul>
         <li className={Styles.socialmediaIcon}>
           <a href="#">

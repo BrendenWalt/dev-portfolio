@@ -9,7 +9,7 @@ const Hero = (props) => {
         <div className="container has-text-centered">
           <h1 className="title">{props.title}</h1>
           <h2 className="subtitle">{props.subtitle}</h2>
-          <SocialMedia />
+          <SocialMedia isVertical={true} />
         </div>
       </div>
     </div>

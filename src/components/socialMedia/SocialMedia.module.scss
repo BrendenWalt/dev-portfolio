@@ -1,5 +1,9 @@
 .socialmedia {
   display: flex;
+  flex-direction: row;
+  ul li {
+    display: inline-block;
+  }
 }
 .socialmediaIcon {
   margin: 1em;
@@ -7,4 +11,8 @@
 .socialmediaIcon svg{
   color: #ffffff;
   font-size: 2em
+}
+
+.socialmedia.socialmediaVertical ul li {
+  display: block;
 }
