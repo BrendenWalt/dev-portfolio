@@ -1,4 +1,5 @@
 import React from "react"
+import SocialMedia from "../socialMedia/SocialMedia"
 import Styles from "./Hero.module.scss"
 
 const Hero = (props) => {
@@ -8,10 +9,10 @@ const Hero = (props) => {
         <div className="container has-text-centered">
           <h1 className="title">{props.title}</h1>
           <h2 className="subtitle">{props.subtitle}</h2>
+          <SocialMedia />
         </div>
       </div>
     </div>
   )
 }
-
 export default Hero
