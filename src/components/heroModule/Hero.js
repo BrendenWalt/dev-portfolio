@@ -10,9 +10,9 @@ const Hero = (props) => {
 
   const Data = useStaticQuery(graphql`
     query backgroundImage {
-      file( relativePath: {eq: "hero-bg-ph.jpg"}) {
+      file(relativePath: { eq: "hero-bg-ph.jpg" }) {
         childImageSharp {
-          fluid {
+          fluid(quality: 80, maxWidth: 2400) {
             ...GatsbyImageSharpFluid
           }
         }
@@ -20,7 +20,6 @@ const Hero = (props) => {
     }
   `)
 
-  // const bgImage = {Data.file.childImageSharp.fluid}
   return (
     <div className={`${Styles.hero} hero `}>
       
@@ -29,7 +28,7 @@ const Hero = (props) => {
           <div className="container has-text-centered">
             <h1 className="title">{props.title}</h1>
             <h2 className="subtitle">{props.subtitle}</h2>
-			<SocialMedia isVertical={true} />
+			      <SocialMedia isVertical={true} />
           </div>
         </div>
       </BackgroundImage>
