@@ -1,12 +1,25 @@
+@import "../../styles/utils/variables";
+
 .aboutSection {
   margin: -10vh auto 0;
-  max-width: 900px;
+  width: calc(100% - 50px);
+  max-width: 1100px;
 }
 
 .aboutCard {
   background-color: #ffffff;
   display: flex;
-  flex-direction: row-reverse;
+  flex-direction: row-reverse; 
+  position: relative;
+  &:before {
+    content: '';
+    position: absolute;
+    background-color: $primary-accent;
+    bottom: -20px;
+    right: -20px;
+    height: 200px;
+    width: 245px;
+  }
 }
 
 .aboutContent {
@@ -14,5 +27,5 @@
 }
 
 .aboutPortrait {
-  width: 100%;
+  flex-basis: 65%;
 }
