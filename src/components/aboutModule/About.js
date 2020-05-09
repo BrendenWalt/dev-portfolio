@@ -26,7 +26,7 @@ const About = () => {
         <div className={Styles.aboutPortrait}>
           <Img fluid={Data.file.childImageSharp.fluid} />
         </div>
-        <div>
+        <div className={Styles.aboutContent}>
           <h2>About</h2>
           <p>This is where I will write about what I do with my life.  I can include details about photography and making stuff for the internet.  For now, I am just leaving this placeholder content </p>
         </div>

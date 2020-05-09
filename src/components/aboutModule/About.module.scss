@@ -7,7 +7,10 @@
   background-color: #ffffff;
   display: flex;
   flex-direction: row-reverse;
-  
+}
+
+.aboutContent {
+  z-index: 2;
 }
 
 .aboutPortrait {

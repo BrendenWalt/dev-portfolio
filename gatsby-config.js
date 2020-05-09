@@ -45,7 +45,7 @@ module.exports = {
     },
     `gatsby-plugin-netlify`,
     `gatsby-plugin-smoothscroll`,
-    `gatsby-plugin-anchor-links`
+    `gatsby-plugin-anchor-links`,
     // this (optional) plugin enables Progressive Web App + Offline functionality
     // To learn more, visit: https://gatsby.dev/offline
     // `gatsby-plugin-offline`,
