@@ -14,11 +14,10 @@
   &:before {
     content: '';
     position: absolute;
-    background-color: $primary-accent;
     bottom: -$offset;
     right: -$offset;
-    height: 200px;
-    width: 245px;
+    border-bottom: 175px solid $primary-accent;
+    border-left: 150px solid transparent;
   }
 }
 
