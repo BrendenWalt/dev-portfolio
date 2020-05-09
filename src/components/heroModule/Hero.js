@@ -1,4 +1,5 @@
 import React from "react"
+import SocialMedia from "../socialMedia/SocialMedia"
 import { graphql, useStaticQuery} from "gatsby" 
 import BackgroundImage from "gatsby-background-image"
 
@@ -28,6 +29,7 @@ const Hero = (props) => {
           <div className="container has-text-centered">
             <h1 className="title">{props.title}</h1>
             <h2 className="subtitle">{props.subtitle}</h2>
+			<SocialMedia isVertical={true} />
           </div>
         </div>
       </BackgroundImage>
@@ -36,5 +38,4 @@ const Hero = (props) => {
     </div>
   )
 }
-
 export default Hero
