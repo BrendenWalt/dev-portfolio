@@ -22,18 +22,20 @@ const Hero = (props) => {
 
   return (
     <div className={`${Styles.hero} hero `}>
-      
-      <BackgroundImage className={Styles.heroBg} fluid={Data.file.childImageSharp.fluid}>
-        <div className="hero-body">
+      <BackgroundImage
+        className={Styles.heroBg}
+        fluid={Data.file.childImageSharp.fluid}
+      >
+        <div className={Styles.heroBody}>
           <div className="container has-text-centered">
             <h1 className="title">{props.title}</h1>
             <h2 className="subtitle">{props.subtitle}</h2>
-			      <SocialMedia isVertical={true} />
+            <div className={Styles.heroSocialmedia}>
+              <SocialMedia isVertical={true} />
+            </div>
           </div>
         </div>
       </BackgroundImage>
-       
-      
     </div>
   )
 }

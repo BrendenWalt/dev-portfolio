@@ -5,14 +5,23 @@
     display: inline-block;
   }
 }
+
 .socialmediaIcon {
   margin: 1em;
+  opacity: 0.65;
+  transition: opacity 0.5s ease, transform 0.5s ease;
+  cursor: pointer;
+  &:hover {
+    opacity: 1;
+    transform: scale(1.1);
+  }
 }
 .socialmediaIcon svg{
   color: #ffffff;
-  font-size: 2em
+  font-size: 1.75em
 }
 
 .socialmedia.socialmediaVertical ul li {
   display: block;
 }
+

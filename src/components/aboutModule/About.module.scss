@@ -15,8 +15,8 @@
     content: '';
     position: absolute;
     background-color: $primary-accent;
-    bottom: -20px;
-    right: -20px;
+    bottom: -$offset;
+    right: -$offset;
     height: 200px;
     width: 245px;
   }

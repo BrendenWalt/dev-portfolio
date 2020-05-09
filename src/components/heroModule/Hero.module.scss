@@ -3,6 +3,26 @@
 }
 
 .heroBg {
+  background-color: #ff0000;
   height: 100%;
-  z-index: -1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 0;
+}
+
+.heroBody {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  position: relative;
+  z-index: 1;
+}
+
+.heroSocialmedia {
+  position: absolute;
+  right:0;
+  top: 0;
+  transform: translateY(-25%);
+  z-index: 5;
 }
