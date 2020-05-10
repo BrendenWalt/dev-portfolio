@@ -30,6 +30,7 @@ const Hero = (props) => {
           <div className={Styles.heroInfoCard}>
             <h1 className={Styles.heroTitle}>{props.title}</h1>
             <h2 className={Styles.heroSubtitle}>{props.subtitle}</h2>
+            <div className={Styles.heroInfoCardBox}></div>
           </div>
           <div className={Styles.heroSocialmedia}>
             <SocialMedia isVertical={true} />

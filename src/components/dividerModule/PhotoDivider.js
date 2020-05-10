@@ -33,16 +33,10 @@ const PhotoDivider = () => {
   return (
     <div className={Styles.photoDivider}>
       <div className={Styles.photoDividerTop}>
-        {/* <Img fluid={Data.top.childImageSharp.fluid} /> */}
         <Img fluid={Data.allFile.edges[1].node.childImageSharp.fluid} />
       </div>
-      <div className={Styles.photoDividerBottom}>
-        {/* {Data.allFile.edges.map(({ node }) => (
-          <Img fluid={node.childImageSharp.fluid} />
-        ))} */}
-        <Img fluid={Data.allFile.edges[0].node.childImageSharp.fluid} />
-        <Img fluid={Data.allFile.edges[2].node.childImageSharp.fluid} />
-      </div>
+      <Img className={Styles.bottomImage} fluid={Data.allFile.edges[0].node.childImageSharp.fluid} />
+      <Img className={Styles.bottomImage} fluid={Data.allFile.edges[2].node.childImageSharp.fluid} />
     </div>
   )
 }

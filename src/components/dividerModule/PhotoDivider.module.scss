@@ -1,9 +1,57 @@
+@import "../../styles/utils/variables";
+
 .photoDivider {
   display: flex;
-  flex: 1;
+  flex: 50%;
+  flex-direction: row;
+  height: 40vh;
+  position: relative;
+  align-items: center;
+  justify-content: space-between;
+  margin: 4.5rem auto;
+  > div {
+    flex: 50%;
+    img {
+      margin-bottom: 0;
+    }
+  }
 }
 
-.photoDividerTop,
-.photoDividerBottom {
-  width: 100%;
+.photoDividerTop {
+  position: absolute;
+  width: 55%;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 1;
+  clip-path: polygon(0 0, 100% 0, 80% 100%, 20% 100%);
+  height: 100%;
+  &:before {
+    content: '';
+    position: absolute;
+    background-color: $color-white;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0px;
+    z-index: 2;
+    clip-path: polygon(0 0, calc(0px + 10px) 0, calc(20% + 10px) 100%, 20% 100%);
+  }
+  &:after {
+    content: '';
+    position: absolute;
+    background-color: $color-white;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0px;
+    z-index: 2;
+    clip-path: polygon(calc(100% - 10px) 0, 100% 0, 80% 100%, calc(80% - 10px) 100%);
+  }
 }
+
+.bottomImage {
+  max-width: 35%;
+  height: 80%;
+}
+
