@@ -1,5 +1,9 @@
 .photoDivider {
-  height: 25vh;
   display: flex;
   flex: 1;
+}
+
+.photoDividerTop,
+.photoDividerBottom {
+  width: 100%;
 }

@@ -27,15 +27,13 @@ const Hero = (props) => {
         fluid={Data.file.childImageSharp.fluid}
       >
         <div className={Styles.heroBody}>
-          {/* <div className="container has-text-centered"> */}
-            <div className={Styles.heroInfoCard}>
-              <h1 className={Styles.heroTitle}>{props.title}</h1>
-              <h2 className={Styles.heroSubtitle}>{props.subtitle}</h2>
-            </div>
-            <div className={Styles.heroSocialmedia}>
-              <SocialMedia isVertical={true} />
-            </div>
-          {/* </div> */}
+          <div className={Styles.heroInfoCard}>
+            <h1 className={Styles.heroTitle}>{props.title}</h1>
+            <h2 className={Styles.heroSubtitle}>{props.subtitle}</h2>
+          </div>
+          <div className={Styles.heroSocialmedia}>
+            <SocialMedia isVertical={true} />
+          </div>
         </div>
       </BackgroundImage>
     </div>
