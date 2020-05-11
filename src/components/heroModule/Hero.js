@@ -36,6 +36,7 @@ const Hero = (props) => {
             <SocialMedia isVertical={true} />
           </div>
         </div>
+        <div className={Styles.heroBgEffects}></div>
       </BackgroundImage>
     </div>
   )
