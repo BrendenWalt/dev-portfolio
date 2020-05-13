@@ -29,7 +29,7 @@ const Hero = (props) => {
         <div className={Styles.heroBody}>
           <div className={Styles.heroInfoCard}>
             <h1 className={Styles.heroTitle}>{props.title}</h1>
-            <h2 className={Styles.heroSubtitle}>{props.subtitle}</h2>
+            <h3 className={Styles.heroSubtitle}>{props.subtitle}</h3>
             <div className={Styles.heroInfoCardBox}></div>
           </div>
           <div className={Styles.heroSocialmedia}>

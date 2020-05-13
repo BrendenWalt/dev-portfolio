@@ -13,14 +13,6 @@
   align-items: center;
   z-index: 0;
   position: relative;
-  &:after {
-    content: '' !important;
-    position: absolute;
-    height: 100%;
-    width: 100%;
-    background-color: rgba( 0, 0, 0, 0.4);
-    z-index: 10;
-  }
 }
 
 .heroBgEffects {
@@ -40,7 +32,7 @@
     width: 100%;
     height: 100%;
     background-color: #000000;
-    opacity: 45%;
+    opacity: 25%;
   }
 }
 

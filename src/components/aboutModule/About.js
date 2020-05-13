@@ -21,7 +21,7 @@ const About = () => {
   `)
 
   return (
-    <div className={Styles.aboutSection} name="about-me" id="about-me">
+    <div className={`${Styles.aboutSection} content-module`} name="about-me" id="about-me">
       <div className={Styles.aboutCard}>
         <div className={Styles.aboutPortrait}>
           <Img fluid={Data.file.childImageSharp.fluid} />
