@@ -27,7 +27,10 @@ const Header = ({ siteTitle }) => {
         <div className={Styles.headerLogo}>
           <Link to="/">
             {/* {siteTitle} */}
-            <Img fluid={data.file.childImageSharp.fluid} />
+            {/* <Img fluid={data.file.childImageSharp.fluid} /> */}
+            <div className={Styles.headerLogoWrap}>
+              BW
+            </div>
           </Link>
         </div>
         <div className={Styles.navContainer}>

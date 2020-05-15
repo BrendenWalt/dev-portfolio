@@ -1,3 +1,5 @@
+@import "../../styles/utils/variables";
+
 header.header {
   width: 100%;
   position: fixed;
@@ -21,6 +23,38 @@ header.header {
   width: 50%;
   img {
     height: auto;
+  }
+}
+
+.headerLogoWrap {
+  color: $color-white;
+  font-family: $font-header;
+  font-size: 3rem;
+  font-weight: 700;
+  margin: 0 auto;
+  text-align: center;
+  position: relative;
+  &:before {
+    content: '';
+    background-color: $color-white;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    left: calc(50% + 20px);
+    top: 20px;
+    opacity: 0.2;
+    transform: translateX(-50%) skew(-20deg) rotate(-10deg);
+    
+  }
+  &:after {
+    content: '';
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    left: 50%;
+    transform: translateX(-50%) skew(-20deg) rotate(-10deg);
+    border: 4px solid $color-white;
+    
   }
 }
 

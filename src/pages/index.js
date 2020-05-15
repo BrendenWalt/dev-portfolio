@@ -1,5 +1,6 @@
 import React from "react"
 import {graphql} from "gatsby"
+import { Helmet } from "react-helmet"
 import "../styles/bulmaStyles.scss"
 import "../styles/general.scss"
 
@@ -16,17 +17,23 @@ import Instagram from "../components/instagramModule/Instagram-feed"
 
 const IndexPage = ({data}) => {
   return (
-    <Layout>
-      <SEO />
-      <Hero title={data.site.siteMetadata.title} subtitle={data.site.siteMetadata.subtitle}/>
-      <About />
-      <PhotoDivider />
-      <Portfolio />
-      <Experience />
-      <Photog />
-      <Instagram />
-      <Contact />
-    </Layout>
+    <div>
+      <Helmet>
+        <link rel="stylesheet" href="https://use.typekit.net/ina6hto.css"></link>
+      </Helmet>
+      <Layout>
+        <SEO />
+        <Hero title={data.site.siteMetadata.title} subtitle={data.site.siteMetadata.subtitle} />
+        <About />
+        <PhotoDivider />
+        <Portfolio />
+        <Experience />
+        <Photog />
+        <Instagram />
+        <Contact />
+      </Layout>
+    </div>
+    
   )
   
 }
