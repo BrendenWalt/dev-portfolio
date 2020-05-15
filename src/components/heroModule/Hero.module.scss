@@ -47,14 +47,14 @@
 
 .heroInfoCard {
   position: relative;
-  padding: 10px 0.75rem 1.25rem;
+  padding: 10px 0.75rem 0.25rem;
   text-align: center;
 }
 
 .heroInfoCardBox {
   width: 110%;
   height: 75%;
-  top: 30%;
+  top: 38%;
   left: 50%;
   position: absolute;
   transform: translateX(-50%);
@@ -96,10 +96,10 @@
 
 .heroTitle {
   font-family: $font-header;
-  font-size: 4rem;
+  font-size: 4.75rem;
   line-height: 100%;
   color: $color-white;
   font-weight: 800;
-  text-transform: uppercase;
-  margin-bottom: 0.5rem;
+  font-variant: small-caps;
+  margin-bottom: 1rem;
 }
