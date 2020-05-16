@@ -6,25 +6,45 @@ const Contact = () => {
   return (
     <div className={Styles.contactModule}>
       <div className={Styles.contactForm} name="contact" id="contact">
-        <form action="https://formspree.io/xgevdnrk" method="post">
-          <label htmlFor="name">
-            Name
-          <input type="text" id="name" name="name" />
-          </label>
-          <label>
-            Email
-          <input type="email" name="_replyto" id="email" />
-          </label>
-          <label>
-            Subject
-          <input type="text" name="subject" id="subject" />
-          </label>
-          <label>
-            Message
-          <textarea name="message" id="message" rows="5" />
-          </label>
-          <button type="submit">Send</button>
-          <input type="reset" value="Clear" />
+        <form action="https://formspree.io/xgevdnrk" method="post" >
+          <div className={Styles.formGroup}>
+
+            <div className={Styles.formField}>
+              <label htmlFor="name">
+                Name
+              </label>
+              <input type="text" id="name" name="name" />
+            </div>
+
+            <div className={Styles.formField}>
+              <label>
+                Email
+              </label>
+              <input type="email" name="_replyto" id="email" />
+            </div>
+
+            <div className={Styles.formField}>
+              <label htmlFor="name">
+                Phone
+              </label>
+              <input type="tel" id="name" name="name" />
+            </div>
+
+           
+          </div>
+         
+          
+          <div className={Styles.formGroup}>
+            <div className={Styles.formField}>
+              <label>
+                Message
+              <textarea name="message" id="message" rows="5" />
+              </label>
+            </div>
+            
+            <button type="submit">Send</button>
+          </div>
+          
           <input type="text" name="_gotcha" style={{ display: `none` }} />
         </form>
       </div>
