@@ -1,0 +1,26 @@
+@import "../../styles/utils/variables";
+
+.experienceList {
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
+  max-width: $content-max;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+.experienceItem {
+  padding: 1rem 0.75rem;
+  border: 1px solid $color-dark;
+  width: 45%;
+  &:nth-of-type(2n) {
+    align-self: flex-end;
+  }
+  &:not(:first-of-type) {
+    margin-top: -5vh;
+  }
+}
+
+.experienceModule {
+
+}
