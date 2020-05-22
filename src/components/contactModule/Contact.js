@@ -17,7 +17,7 @@ const Contact = () => {
             </div>
 
             <div className={Styles.formField}>
-              <label>
+              <label htmlFor="email">
                 Email
               </label>
               <input type="email" name="_replyto" id="email" />
@@ -42,7 +42,7 @@ const Contact = () => {
               </label>
             </div>
             
-            <button type="submit">Send</button>
+            <button type="submit" className="cta-primary">Send</button>
           </div>
           
           <input type="text" name="_gotcha" style={{ display: `none` }} />
