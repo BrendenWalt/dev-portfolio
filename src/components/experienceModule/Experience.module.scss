@@ -9,18 +9,37 @@
   align-items: flex-start;
 }
 
+.experienceDescription {
+  margin-top: 1rem;
+}
+
 .experienceItem {
-  padding: 1rem 0.75rem;
-  border: 1px solid $color-dark;
+  background-color: #ffffff;
+  background-size: auto;
+  background-repeat: no-repeat;
+  background-position: 110% 50%;
+  padding: 1.25rem 10% 1.25rem 1.25rem;
   width: 45%;
   &:nth-of-type(2n) {
     align-self: flex-end;
+    background-position: -10% 50%;
+    text-align: right;
+    padding-left: 10%;  
+    padding-right: 1.25rem;
   }
   &:not(:first-of-type) {
-    margin-top: -5vh;
+    margin-top: -75px;
   }
 }
 
 .experienceModule {
+  background-color: $color-dark;
+  padding: 2.5rem 0 5rem;
+}
 
+.experienceTitle {
+  font-weight: bold;
+  font-variant: small-caps;
+  font-family: $font-header;
+  font-size: 1.25rem;
 }
