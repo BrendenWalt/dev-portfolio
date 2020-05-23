@@ -67,3 +67,24 @@ header.header {
     }
   }
 }
+.navLink {
+  font-size: 16px;
+  position: relative;
+  &:after {
+    content: '';
+    position: absolute;
+    background-color: $primary-accent;
+    bottom: 2px;
+    right: -8px;
+    width: 0;
+    height: 10px;
+    z-index: -1;
+    text-align: center;
+    transition: width 0.25s ease;
+  }
+  &:hover{
+    &:after {
+      width: 100%;
+    }
+  }
+}
