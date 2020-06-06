@@ -3,7 +3,7 @@ import { useStaticQuery, graphql } from "gatsby"
 import PropTypes from "prop-types"
 import React from "react"
 import { AnchorLink } from "gatsby-plugin-anchor-links"
-import Img from "gatsby-image"
+// import Img from "gatsby-image"
 
 import Styles from "./header.module.scss"
 

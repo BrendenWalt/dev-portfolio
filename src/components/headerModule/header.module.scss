@@ -68,7 +68,8 @@ header.header {
   }
 }
 .navLink {
-  font-size: 16px;
+  font-family: $font-copy;
+  font-size: 18px;
   position: relative;
   &:after {
     content: '';

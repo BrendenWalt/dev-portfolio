@@ -31,7 +31,7 @@ const Instagram = () => {
         ))}
         <div className={Styles.instagramOverlay}>
           <h3>
-            <a href="">
+            <a href="https://www.instagram.com/brenden_walters/">
               <FaInstagram /> | Follow me on instagram
             </a>
           </h3>

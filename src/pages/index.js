@@ -20,6 +20,7 @@ const IndexPage = ({data}) => {
     <div>
       <Helmet>
         <link rel="stylesheet" href="https://use.typekit.net/ina6hto.css"></link>
+        <link href="https://fonts.googleapis.com/css2?&family=Montserrat:wght@300;600&display=swap" rel="stylesheet"></link>
       </Helmet>
       <Layout>
         <SEO />
