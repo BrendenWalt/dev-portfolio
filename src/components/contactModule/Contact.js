@@ -1,24 +1,30 @@
 import React from "react";
+import SocialMedia from "../socialMedia/SocialMedia"
 
 import Styles from "./Contact.module.scss";
 
 const Contact = () => {
   return (
     <div className={Styles.contactModule}>
+
+      <div className={Styles.contactHeader}>
+        <h2>Get in touch!</h2>
+      </div>
+
       <div className={Styles.contactForm} name="contact" id="contact">
         <form action="https://formspree.io/xgevdnrk" method="post" >
           <div className={Styles.formGroup}>
 
             <div className={Styles.formField}>
               <label htmlFor="name">
-                Name
+                Name*
               </label>
               <input type="text" id="name" name="name" />
             </div>
 
             <div className={Styles.formField}>
               <label htmlFor="email">
-                Email
+                Email*
               </label>
               <input type="email" name="_replyto" id="email" />
             </div>
@@ -37,7 +43,7 @@ const Contact = () => {
           <div className={Styles.formGroup}>
             <div className={Styles.formField}>
               <label>
-                Message
+                Message*
               <textarea name="message" id="message" rows="5" />
               </label>
             </div>
@@ -47,6 +53,10 @@ const Contact = () => {
           
           <input type="text" name="_gotcha" style={{ display: `none` }} />
         </form>
+      </div>
+
+      <div className={Styles.contactSocial}>
+        <SocialMedia />
       </div>
     </div>
     
