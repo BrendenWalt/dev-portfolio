@@ -1,5 +1,19 @@
 @import "../../styles/utils/variables";
 
+.accIcon {
+  svg {
+    vertical-align: middle;
+  }
+}
+
+.experienceAccordion {
+  text-align: left;
+}
+.experienceAccordionContent {
+  display: none;
+  visibility: hidden;
+}
+
 .experienceList {
   display: flex;
   flex-direction: column;
@@ -7,22 +21,42 @@
   max-width: $content-max;
   justify-content: center;
   align-items: flex-start;
+  position: relative;
+  &:after {
+    content: "";
+    position: absolute;
+    left: 50%;
+    top: 0;
+    width: 0;
+    border-right: 2px dashed $color-white;
+    height: 100%;
+    transform: translateX(-50%);
+    opacity: 50%;
+  }
 }
 
 .experienceDescription {
   margin-top: 1rem;
+  text-align: justify;
 }
 
 .experienceItem {
   background-color: #ffffff;
   background-size: auto;
   background-repeat: no-repeat;
-  background-position: 110% 50%;
+  background-position: 110% 15px;
   padding: 1.25rem 10% 1.25rem 1.25rem;
+  position: relative;
   width: 45%;
+  &:after {
+    content: "";
+  }
+  &:nth-of-type(2n+1) {
+    
+  }
   &:nth-of-type(2n) {
     align-self: flex-end;
-    background-position: -10% 50%;
+    background-position: -10% 15px;
     text-align: right;
     padding-left: 10%;  
     padding-right: 1.25rem;
@@ -42,4 +76,27 @@
   font-variant: small-caps;
   font-family: $font-header;
   font-size: 1.25rem;
+}
+
+.experienceTraits,
+.experienceSkills {
+  text-align: left;
+}
+
+.experienceSkills {
+  li {
+    display: inline-block; 
+    margin-right: 0.75em;
+    position: relative;
+    &:not(:last-child):after {
+      content: ","
+    }
+  }
+  // background-color: rgba(0, 0, 0, 0.1);
+}
+
+.experienceTraits {
+  li {
+
+  }
 }
