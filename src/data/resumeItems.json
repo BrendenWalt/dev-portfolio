@@ -1,23 +1,41 @@
 [
   {
-    "job-title": "Web Developer",
+    "job_title": "Web Developer",
     "company": "WPromote",
-    "company-logo": "../images/logo-placeholder.png",
-    "date-range": "2016 - Present",
-    "description": "Black, so irish coffee siphon extraction variety fair trade sit steamed mazagran. Filter cappuccino, crema trifecta mug viennese medium mocha to go. Plunger pot decaffeinated coffee wings acerbic extra aroma skinny strong aftertaste. Sit aftertaste robust irish brewed french press milk caffeine. Viennese acerbic half and half spoon mazagran redeye aroma."
+    "company_logo": "../images/logo-placeholder.png",
+    "date_range": "2016 - Present",
+    "description": "Black, so irish coffee siphon extraction variety fair trade sit steamed mazagran. Filter cappuccino, crema trifecta mug viennese medium mocha to go. Plunger pot decaffeinated coffee wings acerbic extra aroma skinny strong aftertaste. Sit aftertaste robust irish brewed french press milk caffeine. Viennese acerbic half and half spoon mazagran redeye aroma.",
+    "list": [
+      "list item 1",
+      "list item 2",
+      "list item 3"
+    ],
+    "skills_list": ["HTML", "CSS", "Worpdress", "Javascript"]
   },
   {
-    "job-title": "Web Developer",
+    "job_title": "Web Developer",
     "company": "Freelance",
-    "company-logo": "../images/logo-placeholder.png",
-    "date-range": "2015 - 2016",
-    "description": "Black, so irish coffee siphon extraction variety fair trade sit steamed mazagran. Filter cappuccino, crema trifecta mug viennese medium mocha to go. Plunger pot decaffeinated coffee wings acerbic extra aroma skinny strong aftertaste. Sit aftertaste robust irish brewed french press milk caffeine. Viennese acerbic half and half spoon mazagran redeye aroma."
+    "company_logo": "../images/logo-placeholder.png",
+    "date_range": "2015 - 2016",
+    "description": "Black, so irish coffee siphon extraction variety fair trade sit steamed mazagran. Filter cappuccino, crema trifecta mug viennese medium mocha to go. Plunger pot decaffeinated coffee wings acerbic extra aroma skinny strong aftertaste. Sit aftertaste robust irish brewed french press milk caffeine. Viennese acerbic half and half spoon mazagran redeye aroma.",
+    "list": [
+      "list item 1",
+      "list item 2",
+      "list item 3"
+    ],
+    "skills_list": ["HTML", "CSS", "Worpdress", "Squarespace", "Javascript"]
   },
   {
-    "job-title": "Editor/VFX Artist",
+    "job_title": "Editor/VFX Artist",
     "company": "Durable Goods",
-    "company-logo": "../images/logo-placeholder.png",
-    "date-range" : "2013 - 2015",
-    "description": "Black, so irish coffee siphon extraction variety fair trade sit steamed mazagran. Filter cappuccino, crema trifecta mug viennese medium mocha to go. Plunger pot decaffeinated coffee wings acerbic extra aroma skinny strong aftertaste. Sit aftertaste robust irish brewed french press milk caffeine. Viennese acerbic half and half spoon mazagran redeye aroma."
+    "company_logo": "../images/logo-placeholder.png",
+    "date_range" : "2013 - 2015",
+    "description": "Black, so irish coffee siphon extraction variety fair trade sit steamed mazagran. Filter cappuccino, crema trifecta mug viennese medium mocha to go. Plunger pot decaffeinated coffee wings acerbic extra aroma skinny strong aftertaste. Sit aftertaste robust irish brewed french press milk caffeine. Viennese acerbic half and half spoon mazagran redeye aroma.",
+    "list": [
+      "list item 1",
+      "list item 2",
+      "list item 3"
+    ],
+    "skills_list": ["Photoshop", "Adobe Premiere", "Adobe After Effects", "Davinci Resolve"]
   }
 ]
