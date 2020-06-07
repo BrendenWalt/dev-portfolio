@@ -28,13 +28,13 @@
   text-align: center;
   display: table;
   opacity: 75%;
-  h3 {
+  a {
+    color: $color-white;
+    font-family: $font-copy;
+    font-weight: 200;
     display: table-cell;
     font-size: 3rem;
     vertical-align: middle;
-  }
-  a {
-    color: $color-white;
   }
   svg {
     vertical-align: text-bottom;
