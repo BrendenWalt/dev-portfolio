@@ -1,8 +1,17 @@
 @import "../../styles/utils/variables";
 
+.open {
+  background-color: #ff0000;
+}
+.open .accIcon {
+  svg {
+    transform: rotate(90deg);
+  }
+}
 .accIcon {
   svg {
     vertical-align: middle;
+    transition: translate 0.2s ease;
   }
 }
 
@@ -12,6 +21,11 @@
 .experienceAccordionContent {
   display: none;
   visibility: hidden;
+}
+
+.open .experienceAccordionContent {
+  display: block;
+  visibility: visible;
 }
 
 .experienceItem {

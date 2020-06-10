@@ -51,6 +51,9 @@ const Experience = () => {
           )
         })}
       </div>
+      <div class={Styles.experienceResumeBtn}>
+        <a class={`cta-primary ${Styles.experienceResume}`} href="#" >View Resume</a>
+      </div>
     </div>
   )
 } 

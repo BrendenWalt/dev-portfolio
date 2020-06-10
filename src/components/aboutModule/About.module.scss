@@ -19,6 +19,7 @@
     right: -$offset;
     border-bottom: 175px solid $primary-accent;
     border-left: 150px solid transparent;
+    z-index: -1;
   }
 }
 

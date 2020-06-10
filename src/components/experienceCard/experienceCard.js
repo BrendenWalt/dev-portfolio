@@ -9,7 +9,6 @@ const ExperienceCard = (props) => {
   const toggleAccordion = (e) => {
     e.preventDefault();
     setActive(!active);
-    alert(active);
   }
 
   const info = props.info;
@@ -24,7 +23,7 @@ const ExperienceCard = (props) => {
         <span className={Styles.accIcon}>
           <FaCaretRight />
         </span> More Details...
-              <div className={Styles.experienceAccordionContent}>
+        <div className={Styles.experienceAccordionContent}>
           <ul className={Styles.experienceTraits}>
             {info.list.map((item) => {
               return (
@@ -42,7 +41,6 @@ const ExperienceCard = (props) => {
         </div>
 
       </div>
-
     </div>
   );
 }
