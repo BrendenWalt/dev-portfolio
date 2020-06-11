@@ -1,4 +1,5 @@
 import React from "react"
+import Styles from "./portfolio.module.scss"
 
 const Portfolio = () => {
   return (

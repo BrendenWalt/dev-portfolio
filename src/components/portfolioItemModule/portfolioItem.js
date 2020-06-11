@@ -4,7 +4,7 @@ import Styles from './portfolioItem.module.scss'
 
 const PortfolioItem = () => {
   return (
-    <div>
+    <div className={Styles.portfolioItem}>
 
     </div>
   )

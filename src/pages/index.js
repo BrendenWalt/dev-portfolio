@@ -25,9 +25,9 @@ const IndexPage = ({data}) => {
       <Layout>
         <SEO />
         <Hero title={data.site.siteMetadata.title} subtitle={data.site.siteMetadata.subtitle} />
-        <About />
-        <PhotoDivider />
         <Portfolio />
+        <PhotoDivider />
+        <About />
         <Experience />
         <Photog />
         <Instagram />
