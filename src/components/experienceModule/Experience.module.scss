@@ -2,10 +2,11 @@
 
 .experienceList {
   display: flex;
-  flex-direction: column;
-  margin: 0 auto;
+  flex-direction: row;
+  flex-wrap: wrap;
+  margin: 4rem auto 0;
   max-width: $content-max;
-  justify-content: center;
+  justify-content: space-between;
   align-items: flex-start;
   position: relative;
   &:after {

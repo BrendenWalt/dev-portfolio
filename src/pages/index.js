@@ -14,6 +14,7 @@ import Experience from "../components/experienceModule/Experience"
 import Photog from "../components/photogModule/Photog"
 import Contact from "../components/contactModule/Contact"
 import Instagram from "../components/instagramModule/Instagram-feed"
+import ToTop from "../components/totopModule/ToTop"
 
 const IndexPage = ({data}) => {
   return (
@@ -32,6 +33,7 @@ const IndexPage = ({data}) => {
         <Photog />
         <Instagram />
         <Contact />
+        <ToTop />
       </Layout>
     </div>
     
