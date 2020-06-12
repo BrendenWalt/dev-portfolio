@@ -1,0 +1,14 @@
+@import "../../styles/utils/variables";
+
+.toTop {
+  background-color: $color-secondary;
+  border-radius: 8px 8px 0 0;
+  padding: 8px 20px 4px;
+  position: fixed;
+  bottom: 0;
+  right: 3%;
+  transition: bottom 100ms ease;
+  svg {
+    color: $color-dark;
+  }
+}
