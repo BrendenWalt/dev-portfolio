@@ -15,8 +15,11 @@ const ExperienceCard = (props) => {
 
   return (
     <div className={Styles.experienceItem} key={info.id} style={props.bg}>
-      <h4 className={Styles.experienceTitle}>{info.job_title}</h4>
-      <p className={Styles.experienceCompany}>{info.company}</p>
+      <div className={Styles.experiencePopout}>
+        <h4 className={Styles.experienceTitle}>{info.job_title}</h4>
+        <p className={Styles.experienceCompany}>{info.company}</p>
+      </div>
+      
       <p className={Styles.experienceRange}>{info.date_range}</p>
       <p className={Styles.experienceDescription}>{info.description}</p>
       <div className={`${Styles.experienceAccordion}${active ? ' open' : ''}`} onClick={toggleAccordion} role="presentation">

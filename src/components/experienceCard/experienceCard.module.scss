@@ -33,24 +33,43 @@
   background-size: auto;
   background-repeat: no-repeat;
   background-position: 110% 15px;
-  padding: 1.25rem 10% 1.25rem 1.25rem;
+  padding: 3.25rem 10% 1.25rem 1.25rem;
   position: relative;
   width: 45%;
   &:after {
     content: "";
-  }
-  &:nth-of-type(2n+1) {
+    position: absolute;
     
   }
+ 
   &:nth-of-type(2n) {
     align-self: flex-end;
     background-position: -10% 15px;
     text-align: right;
-    padding-left: 10%;  
+    padding-left: 10%;
     padding-right: 1.25rem;
   }
-  &:not(:first-of-type) {
-    margin-top: -75px;
+  &:nth-of-type(2n) {
+    margin-top: 15%;
+  }
+  &:nth-of-type(2n+1):not(:first-of-type) {
+    margin-top: -10%;
+  }
+}
+
+.experiencePopout {
+  background-color: $color-secondary;
+  padding: 0.5rem 2.5rem 0.5rem 0.75rem;
+  position: absolute; 
+  top: -20px;
+  left: -30px;
+}
+
+.experienceItem:nth-of-type(2n) {
+  .experiencePopout {
+    padding: 0.5rem 0.75rem 0.5rem 2.5rem;
+    right: -30px;
+    left: auto;
   }
 }
 
