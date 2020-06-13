@@ -8,6 +8,10 @@
   bottom: 0;
   right: 3%;
   transition: bottom 100ms ease;
+  a {
+    display: block;
+    line-height: normal;
+  }
   svg {
     color: $color-dark;
   }

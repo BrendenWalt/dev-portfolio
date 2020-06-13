@@ -22,9 +22,9 @@ const Header = ({ siteTitle }) => {
   `)
 
   return (
-    <header className={Styles.header}>
+    <header className={Styles.header} >
       <div className={Styles.headerContainer} >
-        <div className={Styles.headerLogo} name="header-logo" id="header-logo">
+        <div className={Styles.headerLogo}>
           <Link to="/">
             {/* {siteTitle} */}
             {/* <Img fluid={data.file.childImageSharp.fluid} /> */}

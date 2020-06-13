@@ -21,7 +21,7 @@ const Hero = (props) => {
   `)
 
   return (
-    <div className={`${Styles.hero} hero`}>
+    <div className={`${Styles.hero} hero`} name="header-logo" id="header-logo">
       <BackgroundImage
         className={Styles.heroBg}
         fluid={Data.file.childImageSharp.fluid}

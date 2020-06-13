@@ -12,6 +12,7 @@ const ToTop = () => {
         stripHash >
         <FaChevronUp />
       </AnchorLink>
+      
     </div>
   )
 }
