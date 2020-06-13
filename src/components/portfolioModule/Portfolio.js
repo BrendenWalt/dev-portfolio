@@ -13,7 +13,13 @@ const Portfolio = () => {
             node {
               id
               project_description
-              project_thumbnail
+              project_thumbnail {
+                childImageSharp {
+                  fluid(quality: 80, maxWidth: 500) {
+                    ...GatsbyImageSharpFluid
+                  }
+                }
+              }
               project_title
               tech_stack
             }
@@ -26,17 +32,18 @@ const Portfolio = () => {
   return (
     <div className={`${Styles.portfolioModule} content-module`} name="portfolio" id="portfolio">
       <h2>Portfolio</h2>
-      {data.allPortfolioItemsJson.edges.map(({node}) => {
-        console.log(node);
-        return (
-          <p>
-            {node.project_description}
-          </p>
-        );
-        
-      })}
+      <div className={Styles.portfolioItems}>
+        {data.allPortfolioItemsJson.edges.map(({ node }) => {
+          console.log(node);
+          return (
+            <PortfolioItem data={node} />
+          );
 
-      <PortfolioItem />
+        })}
+      </div>
+      
+
+      
     </div>
   )
 }

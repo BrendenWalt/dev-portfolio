@@ -1,2 +1,8 @@
-@import "../../styles/utils/variables"
+@import "../../styles/utils/variables";
 
+.portfolioItems {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  flex-basis: 25%;
+}
