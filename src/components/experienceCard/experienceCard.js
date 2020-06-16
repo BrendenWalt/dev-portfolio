@@ -1,6 +1,7 @@
 import React, {useState} from 'react'
 import { FaCaretRight } from 'react-icons/fa'
 import Styles from './experienceCard.module.scss'
+import Img from "gatsby-image"
 
 const ExperienceCard = (props) => {
 
@@ -14,10 +15,16 @@ const ExperienceCard = (props) => {
   const info = props.info;
 
   return (
-    <div className={Styles.experienceItem} key={info.id} style={props.bg}>
+    <div className={Styles.experienceItem} key={info.id}>
       <div className={Styles.experiencePopout}>
         <h4 className={Styles.experienceTitle}>{info.job_title}</h4>
         <p className={Styles.experienceCompany}>{info.company}</p>
+      </div>
+      <div className={Styles.companyLogo}>
+        <div>
+          <Img fluid={props.logo} />
+        </div>
+        
       </div>
       
       <p className={Styles.experienceRange}>{info.date_range}</p>

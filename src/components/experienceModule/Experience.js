@@ -45,9 +45,10 @@ const Experience = () => {
       <h2>Experience</h2>
       <div className={Styles.experienceList}>
         {data.allResumeItemsJson.edges.map(({node}) => {
+          const bg_logo = node.company_logo.childImageSharp.fluid;
           const bg = { backgroundImage: `url(${node.company_logo.childImageSharp.fluid.src})`};
           return (
-            <ExperienceCard info={node} bg={bg} />
+            <ExperienceCard info={node} bg={bg} logo={bg_logo}/>
           )
         })}
       </div>

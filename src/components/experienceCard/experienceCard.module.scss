@@ -15,6 +15,24 @@
   }
 }
 
+.companyLogo {
+  position: absolute;
+  top: 0px;
+  right: 0%;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  z-index: 0;
+  > div {
+    position: absolute;
+    top: 15px;
+    right: -7%;
+    width: 50%;
+    max-width: 200px;
+    opacity: 0.3;
+  }
+}
+
 .experienceAccordion {
   text-align: left;
 }
@@ -48,6 +66,9 @@
     text-align: right;
     padding-left: 10%;
     padding-right: 1.25rem;
+    .companyLogo div:first-child{
+      left: -7%;
+    }
   }
   &:nth-of-type(2n) {
     margin-top: 15%;
@@ -55,6 +76,12 @@
   &:nth-of-type(2n+1):not(:first-of-type) {
     margin-top: -10%;
   }
+}
+
+.experienceRange,
+.experienceDescription {
+  position: relative;
+  z-index: 2;
 }
 
 .experiencePopout {
