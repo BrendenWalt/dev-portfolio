@@ -30,7 +30,10 @@ const Photog = () => {
       <div className={Styles.photogGrid}>
         {images.allImageSharp.edges.map(({node}) => {
           return (
-            <Img fluid={node.fluid} />
+            <div className={Styles.photogGridItem}>
+              <Img fluid={node.fluid} />
+            </div>
+            
           );
         })}
       </div>
