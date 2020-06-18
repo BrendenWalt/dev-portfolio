@@ -9,7 +9,7 @@ const Photog = () => {
   const images = useStaticQuery(
     graphql`
       query {
-        allImageSharp(filter: {original: {src: {regex: "/photog-sample/"}}}) {
+        allImageSharp(filter: {original: {src: {regex: "/photog-sample/"}}}, sort: {order: ASC, fields: original___src}) {
           edges {
             node {
               fluid(quality: 80, maxWidth: 800) {

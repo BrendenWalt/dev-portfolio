@@ -3,13 +3,16 @@
 .photogGrid {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  grid-template-rows: repeat(3,30vh);
+  grid-template-rows: repeat(3, 33.3%);
+  height: 100vh;
+  margin: 0 auto;
 }
 
 .photogGridItem {
   display: inline-block;
   div {
     height: 100%;
+    padding-bottom: 0 !important;
   }
   img {
     margin-bottom: 0;
