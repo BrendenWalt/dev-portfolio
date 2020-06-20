@@ -1,5 +1,9 @@
 @import "../../styles/utils/variables";
 
+.photogModule {
+  margin-bottom: -2px;
+}
+
 .photogGrid {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
