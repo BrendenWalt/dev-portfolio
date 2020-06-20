@@ -22,7 +22,7 @@ const Header = ({ siteTitle }) => {
   `)
 
   return (
-    <header className={Styles.header} >
+    <header className={`${Styles.header} ${Styles.header_dark}`} >
       <div className={Styles.headerContainer} >
         <div className={Styles.headerLogo}>
           <Link to="/">

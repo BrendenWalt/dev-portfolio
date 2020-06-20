@@ -4,7 +4,7 @@ header.header {
   width: 100%;
   position: fixed;
   top: 0;
-  z-index: 2;
+  z-index: 5;
 }
 
 .headerContainer {
@@ -55,6 +55,26 @@ header.header {
     transform: translateX(-50%) skew(-20deg) rotate(-10deg);
     border: 4px solid $color-white;
     
+  }
+}
+
+.header.header_dark {
+  background-color: rgba(255, 255, 255, 0.4);
+  .headerContainer {
+    padding-top: 1.5rem;
+    padding-bottom: 2.85rem;
+  }
+  .headerLogoWrap {
+    color: $color-dark;
+    &:before {
+      background-color: $color-dark;
+    }
+    &:after {
+      border-color: $color-dark;
+    }
+  }
+  .navLink a{
+    color: $color-dark;
   }
 }
 
