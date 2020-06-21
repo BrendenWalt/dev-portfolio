@@ -31,7 +31,10 @@
 
 .experienceModule {
   background-color: $color-dark;
-  padding: 2.5rem 0 5rem;
+  padding: 2.5rem 40px 5rem;
+  h2 {
+    margin-left: 0;
+  }
 }
 
 .experienceResumeBtn {
