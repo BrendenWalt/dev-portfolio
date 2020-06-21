@@ -40,19 +40,19 @@ const PortfolioItem = (props) => {
           {techIcons}
         </div>
       </div>
-      <a className={Styles.portfolio_link_overlay} href={data.url} target="_blank"></a>
+      <a className={Styles.portfolio_link_overlay} href={data.url} target="_blank" rel="noopener noreferrer">&nbsp;</a>
       
       <div className={Styles.portfolioItemTitle}>
         <h3>
-          <a href={data.url} target="_blank">
+          <a href={data.url} target="_blank" rel="noopener noreferrer">
             {data.project_title}
           </a>
         </h3>
-        <a href={data.github_url} target="_blank">
+        <a href={data.github_url} target="_blank" rel="noopener noreferrer">
           <FaGithub />
         </a>
       </div>
-      <a href={data.url} target="_blank">
+      <a href={data.url} target="_blank" rel="noopener noreferrer">
         <Img fluid={props.data.project_thumbnail.childImageSharp.fluid} />
       </a>
       
