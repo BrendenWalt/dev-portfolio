@@ -1,7 +1,7 @@
 import React from 'react'
 import Img from "gatsby-image"
 // Import Icons
-import { FaHtml5, FaCss3Alt, FaSass, FaWordpress, FaJsSquare, FaReact, FaAngular} from "react-icons/fa"
+import { FaHtml5, FaCss3Alt, FaSass, FaWordpress, FaJsSquare, FaReact, FaAngular, FaGithub} from "react-icons/fa"
 
 import Styles from './portfolioItem.module.scss'
 
@@ -34,16 +34,28 @@ const PortfolioItem = (props) => {
 
   return (
     <div className={Styles.portfolioItem}>
+      
       <div className={Styles.portfolioItemOverlayContainer}>
         <div className={Styles.portfolioTechOverlay}>
           {techIcons}
         </div>
       </div>
+      <a className={Styles.portfolio_link_overlay} href={data.url} target="_blank"></a>
       
       <div className={Styles.portfolioItemTitle}>
-        <h3>{data.project_title}</h3>
+        <h3>
+          <a href={data.url} target="_blank">
+            {data.project_title}
+          </a>
+        </h3>
+        <a href={data.github_url} target="_blank">
+          <FaGithub />
+        </a>
       </div>
-      <Img fluid={props.data.project_thumbnail.childImageSharp.fluid} />
+      <a href={data.url} target="_blank">
+        <Img fluid={props.data.project_thumbnail.childImageSharp.fluid} />
+      </a>
+      
     </div>
   )
 }

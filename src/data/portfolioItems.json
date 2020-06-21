@@ -2,38 +2,29 @@
   {
     "project-title": "Cage Quotes",
     "project-description": "My money's in that office, right? If she start giving me some bullshit about it ain't there, and we got to go someplace else and get it, I'm gonna shoot you in the head then and there. Then I'm gonna shoot that bitch in the kneecaps, find out where my goddamn money is. She gonna tell me too. Hey, look at me when I'm talking to you, motherfucker. You listen: we go in there, and that nigga Winston or anybody else is in there, you the first motherfucker to get shot. You understand?",
-    "project-thumbnail": "../images/logo-placeholder.png",
-    "tech-stack":["React"]
+    "project-thumbnail": "../images/cage-quotes.png",
+    "github-link": "https://github.com/BrendenWalt/cage-quotes",
+    "tech-stack":["React"],
+    "url": "https://cage-quotes.netlify.app/"
   },
   {
     "project-title": "Stephanievanalstine.com",
     "project-description": "My money's in that office, right? If she start giving me some bullshit about it ain't there, and we got to go someplace else and get it, I'm gonna shoot you in the head then and there. Then I'm gonna shoot that bitch in the kneecaps, find out where my goddamn money is. She gonna tell me too. Hey, look at me when I'm talking to you, motherfucker. You listen: we go in there, and that nigga Winston or anybody else is in there, you the first motherfucker to get shot. You understand?",
-    "project-thumbnail": "../images/logo-placeholder.png",
-    "tech-stack":["HTML", "CSS", "Javascript", "Wordpress"]
+    "project-thumbnail": "../images/vanalstine.png",
+    "github-link": "https://github.com/BrendenWalt/stephanie",
+    "tech-stack":["HTML", "CSS", "Javascript", "Wordpress"],
+    "url":"https://stephanievanalstine.com/"
   },
   {
     "project-title": "Rolodex App",
     "project-description": "My money's in that office, right? If she start giving me some bullshit about it ain't there, and we got to go someplace else and get it, I'm gonna shoot you in the head then and there. Then I'm gonna shoot that bitch in the kneecaps, find out where my goddamn money is. She gonna tell me too. Hey, look at me when I'm talking to you, motherfucker. You listen: we go in there, and that nigga Winston or anybody else is in there, you the first motherfucker to get shot. You understand?",
-    "project-thumbnail": "../images/logo-placeholder.png",
+    "project-thumbnail": "../images/rolodex.png",
+    "github-link":"https://github.com/BrendenWalt/angular-contacts-app",
     "tech-stack": [
       "Angular",
       "CSS",
       "HTML"
-    ]
-  },
-  {
-    "project-title": "HTML Email",
-    "project-description": "My money's in that office, right? If she start giving me some bullshit about it ain't there, and we got to go someplace else and get it, I'm gonna shoot you in the head then and there. Then I'm gonna shoot that bitch in the kneecaps, find out where my goddamn money is. She gonna tell me too. Hey, look at me when I'm talking to you, motherfucker. You listen: we go in there, and that nigga Winston or anybody else is in there, you the first motherfucker to get shot. You understand?",
-    "project-thumbnail": "../images/logo-placeholder.png",
-    "tech-stack":["HTML","CSS"]
-  },
-  {
-    "project-title": "HTML Email",
-    "project-description": "My money's in that office, right? If she start giving me some bullshit about it ain't there, and we got to go someplace else and get it, I'm gonna shoot you in the head then and there. Then I'm gonna shoot that bitch in the kneecaps, find out where my goddamn money is. She gonna tell me too. Hey, look at me when I'm talking to you, motherfucker. You listen: we go in there, and that nigga Winston or anybody else is in there, you the first motherfucker to get shot. You understand?",
-    "project-thumbnail": "../images/logo-placeholder.png",
-    "tech-stack": [
-      "HTML",
-      "CSS"
-    ]
+    ],
+    "url": "https://angular-contacts.netlify.app/"
   }
 ]

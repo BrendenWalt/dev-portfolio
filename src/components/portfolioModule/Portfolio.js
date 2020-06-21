@@ -22,6 +22,8 @@ const Portfolio = () => {
               }
               project_title
               tech_stack
+              github_link
+              url
             }
           }
         }
