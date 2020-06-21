@@ -1,28 +1,34 @@
 import { Link } from "gatsby"
 import { useStaticQuery, graphql } from "gatsby"
 import PropTypes from "prop-types"
-import React from "react"
+import React, {useState, Component} from "react"
 import { AnchorLink } from "gatsby-plugin-anchor-links"
 // import Img from "gatsby-image"
 
 import Styles from "./header.module.scss"
+import { render } from "node-sass"
+import PortfolioItem from "../portfolioItemModule/portfolioItem"
 
 const Header = ({ siteTitle }) => {
+// class Header extends Component {
 
-  const data = useStaticQuery(graphql`
-    query siteLogoQuery {
-      file(relativePath: { eq: "placeholder_logo.png" }) {
-        childImageSharp {
-          fluid {
-            ...GatsbyImageSharpFluid
-          }
-        }
-      }
+  const [scroll, setScroll] = useState(false);
+  
+  componentDidMount() {
+
+  }
+
+  window.addEventListener('scroll', () => {
+    if (window.scrollY > 800) {
+      setScroll(true);
+      console.log('scrolling');
+    } else {
+      setScroll(false);
     }
-  `)
-
+  })
+    
   return (
-    <header className={`${Styles.header} ${Styles.header_dark}`} >
+    <header className={`${Styles.header} ${scroll && Styles.header_dark}`} >
       <div className={Styles.headerContainer} >
         <div className={Styles.headerLogo}>
           <Link to="/">
@@ -30,7 +36,7 @@ const Header = ({ siteTitle }) => {
             {/* <Img fluid={data.file.childImageSharp.fluid} /> */}
             <div className={Styles.headerLogoWrap}>
               BW
-            </div>
+          </div>
           </Link>
         </div>
         <div className={Styles.navContainer}>
@@ -41,41 +47,42 @@ const Header = ({ siteTitle }) => {
                 stripHash
               >
                 About
-              </AnchorLink>
+            </AnchorLink>
             </li>
             <li className={Styles.navLink}>
-              <AnchorLink 
+              <AnchorLink
                 to="/#portfolio"
               >
                 Portfolio
-              </AnchorLink>
+            </AnchorLink>
             </li>
             <li className={Styles.navLink}>
-              <AnchorLink 
+              <AnchorLink
                 to="/#experience"
               >
                 Experience
-              </AnchorLink>
+            </AnchorLink>
             </li>
             <li className={Styles.navLink}>
-              <AnchorLink 
+              <AnchorLink
                 to="/#photography"
               >
                 Photography
-              </AnchorLink>
+            </AnchorLink>
             </li>
             <li className={Styles.navLink}>
-              <AnchorLink 
+              <AnchorLink
                 to="/#contact"
               >
                 Contact
-              </AnchorLink>
+            </AnchorLink>
             </li>
           </ul>
         </div>
       </div>
     </header>
   )
+  
 }
 
 Header.propTypes = {

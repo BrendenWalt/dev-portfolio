@@ -1,9 +1,13 @@
 @import "../../styles/utils/variables";
 
+.portfolioModule {
+  margin: 4rem 2%;
+}
+
 .portfolioItems {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
-  padding: 10px;
+  padding: 4rem 10px;
   justify-content: center;
 }

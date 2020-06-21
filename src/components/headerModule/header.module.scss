@@ -21,9 +21,7 @@ header.header {
 .headerLogo {
   max-width: 200px;
   width: 50%;
-  img {
-    height: auto;
-  }
+  transition: transform 0.3s ease-in-out;
 }
 
 .headerLogoWrap {
@@ -34,6 +32,7 @@ header.header {
   margin: 0 auto;
   text-align: center;
   position: relative;
+  
   &:before {
     content: '';
     background-color: $color-white;
@@ -60,9 +59,15 @@ header.header {
 
 .header.header_dark {
   background-color: rgba(255, 255, 255, 0.4);
+  * {
+    transition: all 0.3s ease-in-out;
+  }
   .headerContainer {
     padding-top: 1.5rem;
-    padding-bottom: 2.85rem;
+    padding-bottom: 2rem;
+  }
+  .headerLogo {
+    transform: scale(0.75);
   }
   .headerLogoWrap {
     color: $color-dark;
