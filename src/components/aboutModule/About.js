@@ -11,7 +11,7 @@ const About = () => {
     query aboutPortraitQuery {
       file(relativePath: {eq: "portrait-ph.jpg"}) {
         childImageSharp {
-          fluid {
+          fluid(quality: 80, maxWidth: 600) {
             ...GatsbyImageSharpFluid
           }
         }
