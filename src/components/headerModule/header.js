@@ -1,22 +1,19 @@
 import { Link } from "gatsby"
-import { useStaticQuery, graphql } from "gatsby"
 import PropTypes from "prop-types"
 import React, {useState, Component} from "react"
 import { AnchorLink } from "gatsby-plugin-anchor-links"
 // import Img from "gatsby-image"
 
 import Styles from "./header.module.scss"
-import { render } from "node-sass"
-import PortfolioItem from "../portfolioItemModule/portfolioItem"
 
 const Header = ({ siteTitle }) => {
 // class Header extends Component {
 
   const [scroll, setScroll] = useState(false);
   
-  componentDidMount() {
+  // componentDidMount() {
 
-  }
+  // }
 
   window.addEventListener('scroll', () => {
     if (window.scrollY > 800) {

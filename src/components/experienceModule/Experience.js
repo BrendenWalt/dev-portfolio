@@ -36,9 +36,7 @@ const Experience = () => {
     }
     `
   )
-
   
-
   console.log(data);
   return (
     <div className={`${Styles.experienceModule} content-module`} name="experience" id="experience">
