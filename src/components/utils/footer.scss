@@ -1,0 +1,20 @@
+@import "../../styles/utils/variables";
+
+.footer {
+  background-color: $color-teal;
+  div, a {
+    color: $color-white;
+    font-family: $font-copy;
+    font-size: 12px;
+  }
+  .footer-title {
+    color: $color-white;
+    font-family: $font-header;
+    font-size: 1.45rem;
+    letter-spacing: 0.1rem;
+    font-weight: 700;
+    margin-bottom: 0.5rem;
+    text-transform: uppercase;
+  }
+
+}
