@@ -8,7 +8,7 @@ const Contact = () => {
     <div className={Styles.contactModule}>
 
       <div className={Styles.contactHeader}>
-        <h2>Get in touch!</h2>
+        <h2>Contact</h2>
       </div>
 
       <div className={Styles.contactForm} name="contact" id="contact">
