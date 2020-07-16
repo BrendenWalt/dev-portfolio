@@ -11,6 +11,7 @@ import {
   FaPhp,
   FaRebel
 } from "react-icons/fa"
+import Lrc from "../../images/icons/lrc.svg"
 
 
 import Styles from "./TechIcons.module.scss"
@@ -47,6 +48,12 @@ const TechIcons = () => {
       </div>
       <div className={Styles.techIcon}>
         <FaPhp title="PHP" />
+      </div>
+      <div className={Styles.techIcon}>
+        <img src={Lrc} alt="Lightroom Classic" title="Lightroom Classic" />
+      </div>
+      <div className={Styles.techIcon}>
+        <img src={Lrc} alt="Lightroom Classic" title="Lightroom Classic" />
       </div>
     </div>
   )

@@ -1,15 +1,12 @@
 @import "../../styles/utils/variables";
 
 .techIconsModule {
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(20%, 1fr ));
   padding: 4.5rem 0;
   margin: 0 auto;
   max-width: 1100px;
   width: 90%;
-  flex-direction: row;
-  flex-wrap: wrap;
 }
 
 .techIcon {
@@ -17,4 +14,7 @@
   font-size: 5rem;
   text-align: center;
   margin: 1.5rem 0;
+  img {
+    max-width: 70px;
+  }
 }
