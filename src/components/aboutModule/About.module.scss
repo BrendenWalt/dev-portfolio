@@ -1,44 +1,27 @@
 @import "../../styles/utils/variables";
 
 .aboutSection {
+  background-color: $color-teal;
   padding: 0 0 10vh;
-  margin-bottom: 100px;
 }
 
 .aboutCard {
-  background-color: #ffffff;
   display: flex;
   flex-direction: row-reverse; 
-  align-items: flex-start;
-  justify-content: space-between;
+  align-items: center;
+  justify-content: center;
   position: relative;
   width: calc(100% - 50px);
   max-width: 1100px;
   margin: 0 auto 0;
-  &:before {
-    content: '';
-    position: absolute;
-    top: 10%;
-    left: 50%;
-    transform: translate(-50%, 0);
-    width: 120%;
-    background-color: $color-primary;
-    height: 45%;
-    z-index: 0;
-  }
 }
 
 .aboutContent {
-  $abtCardOffset: 150px;
-
-  background-color: gray;
+  background-color: $color-white;
   z-index: 2;
   overflow-x: hidden;
   overflow-y: hidden;
-  margin-top: $abtCardOffset;
-  margin-bottom: -$abtCardOffset;
   width: 50%;
-  align-self: stretch;
   padding: 20px;
   text-align: justify;
 }
