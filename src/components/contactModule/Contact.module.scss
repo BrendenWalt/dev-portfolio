@@ -72,6 +72,7 @@
 }
 
 .formField {
+    flex: 1 0 auto;
   input, label, textarea {
     font-family: $font-copy;
     display: block;
@@ -81,12 +82,12 @@
     border-style: none;
     border: 0;
     margin-bottom: 1rem;
-    width: 80%;
+    width: 90%;
     border-bottom: 1px solid $color-dark;
   }
   textarea {
     border-style: none;
-    border: 0;
+    border-bottom: 1px solid $color-dark;
     margin-bottom: 1rem;
     width: 100%;
   }
@@ -106,9 +107,9 @@
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
-  flex: 1 1 0px;
   justify-content: space-between;
   padding: 25px;
+  width: 100%;
   textarea {
     resize: none;
   }
