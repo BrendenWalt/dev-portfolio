@@ -51,9 +51,10 @@
   background-size: auto;
   background-repeat: no-repeat;
   background-position: 110% 15px;
+  margin-bottom: 7rem;
   padding: 3.25rem 10% 1.25rem 1.25rem;
   position: relative;
-  width: 45%;
+  width: 65%;
   &:after {
     content: "";
     position: absolute;
@@ -69,12 +70,6 @@
     .companyLogo div:first-child{
       left: -7%;
     }
-  }
-  &:nth-of-type(2n) {
-    margin-top: 15%;
-  }
-  &:nth-of-type(2n+1):not(:first-of-type) {
-    margin-top: -10%;
   }
 }
 
@@ -120,12 +115,5 @@
     &:not(:last-child):after {
       content: ","
     }
-  }
-  // background-color: rgba(0, 0, 0, 0.1);
-}
-
-.experienceTraits {
-  li {
-
   }
 }

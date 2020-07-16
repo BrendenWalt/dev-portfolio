@@ -2,24 +2,13 @@
 
 .experienceList {
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   flex-wrap: wrap;
   margin: 4rem auto 0;
   max-width: $content-max;
   justify-content: space-between;
   align-items: flex-start;
   position: relative;
-  &:after {
-    content: "";
-    position: absolute;
-    left: 50%;
-    top: 0;
-    width: 0;
-    border-right: 2px dashed $color-white;
-    height: 100%;
-    transform: translateX(-50%);
-    opacity: 50%;
-  }
 }
 
 .experienceDescription {
@@ -27,10 +16,8 @@
   text-align: justify;
 }
 
-
-
 .experienceModule {
-  background-color: $color-dark;
+  background-color: $color-primary;
   padding: 2.5rem 40px 5rem;
   h2 {
     margin-left: 0;
