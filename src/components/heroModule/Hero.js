@@ -10,7 +10,7 @@ const Hero = (props) => {
 
   const Data = useStaticQuery(graphql`
     query backgroundImage {
-      file(relativePath: { eq: "hero-bg-ph.jpg" }) {
+      file(relativePath: { eq: "hawaii-lifesaver_001.jpg" }) {
         childImageSharp {
           fluid(quality: 80, maxWidth: 2400) {
             ...GatsbyImageSharpFluid
