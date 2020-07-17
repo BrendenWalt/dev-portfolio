@@ -1,8 +1,16 @@
 @import "../../styles/utils/variables";
 
+$offset: 20px;
+
 .aboutSection {
   background-color: $color-teal;
   padding: 0 0 10vh;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  h2 {
+    justify-self: flex-start;
+  }
 }
 
 .aboutCard {
@@ -18,15 +26,48 @@
 
 .aboutContent {
   background-color: $color-white;
-  z-index: 2;
-  overflow-x: hidden;
-  overflow-y: hidden;
+  box-shadow: 4px 4px 20px 0px rgba(0, 0, 0, 0.3);
+  z-index: 0;
+  flex: 1.25 0 auto;
+  margin-right: -$offset * 2;
   width: 50%;
-  padding: 20px;
+  padding: 2rem 2.5rem;
   text-align: justify;
+  position: relative;
+  &:before {
+    content: '';
+    position: absolute;
+    background-color: $color-salmon;
+    top: -$offset;
+    left: -$offset;
+    width: 70%;
+    height: 65%;
+    z-index: -3;
+  }
 }
 
 .aboutPortrait {
+  
+
   flex: 0 1 455%;
   max-width: 450px;
+  position: relative;
+  &:before {
+    content: '';
+    position: absolute;
+    top: -$offset;
+    left: -$offset;
+    width: 100%;
+    height: 100%;
+    background-color: $color-primary;
+  }
+  &:after {
+    content: '';
+    position: absolute;
+    right: -$offset;
+    bottom: -$offset;
+    width: 100%;
+    height: 100%;
+    border: 4px solid $color-salmon;
+  }
 }
