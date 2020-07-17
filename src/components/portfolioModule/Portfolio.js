@@ -33,7 +33,7 @@ const Portfolio = () => {
   console.log(data);
   return (
     <div className={`${Styles.portfolioModule} content-module`} name="portfolio" id="portfolio">
-      <h2>Portfolio</h2>
+      {/* <h2>Portfolio</h2> */}
       <div className={Styles.portfolioItems}>
         {data.allPortfolioItemsJson.edges.map(({ node }) => {
           console.log(node);
