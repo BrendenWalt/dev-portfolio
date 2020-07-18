@@ -12,8 +12,8 @@
   position: relative;
   &:before {
     @include pseudo-overlay;
-    background: rgb(131,58,180);
-    background: linear-gradient(157deg, rgba(131,58,180,1) 21%, rgba(225,48,108,1) 80%, rgba(247,119,55,1) 100%);
+    background: $color-teal;
+    background: linear-gradient(160deg, $color-salmon 20%, $color-teal 60%, $color-secondary 90%);
     opacity: 0.6;
     z-index: 1;
   }
