@@ -22,16 +22,23 @@ const About = () => {
 
   return (
     <div className={`${Styles.aboutSection} content-module`} name="about-me" id="about-me">
-      <h2>About</h2>
-      <div className={Styles.aboutCard}>
-        <div className={Styles.aboutPortrait}>
-          <Img fluid={Data.file.childImageSharp.fluid} />
+      <div className={Styles.aboutContainer}>
+        <div className={Styles.aboutHeader}>
+          <h2>About</h2>
         </div>
-        <div className={Styles.aboutContent}>
-          
-          <p>This is where I will write about what I do with my life.  I can include details about photography and making stuff for the internet.  For now, I am just leaving this placeholder content </p>
+        
+        <div className={Styles.aboutCard}>
+          <div className={Styles.aboutPortrait}>
+            <Img fluid={Data.file.childImageSharp.fluid} />
+          </div>
+          <div className={Styles.aboutContent}>
+            <div>
+              <p>This is where I will write about what I do with my life.  I can include details about photography and making stuff for the internet.  For now, I am just leaving this placeholder content </p>
+            </div>
+          </div>
         </div>
       </div>
+      
     </div>
   )
 }
