@@ -1,6 +1,7 @@
 import React, {useState} from "react"
 import { useStaticQuery, graphql } from "gatsby"
 import ExperienceCard from '../experienceCard/experienceCard'
+import TechIcons from '../techIconsModule/TechIcons'
 import Img from "gatsby-image"
 import BackgroundImage from "gatsby-background-image"
 
@@ -46,10 +47,13 @@ const Experience = () => {
           const bg_logo = node.company_logo.childImageSharp.fluid;
           const bg = { backgroundImage: `url(${node.company_logo.childImageSharp.fluid.src})`};
           return (
-            <ExperienceCard info={node} bg={bg} logo={bg_logo}/>
+            // <div className={Styles.experienceItemContainer}>
+              <ExperienceCard info={node} bg={bg} logo={bg_logo} />
+            // </div>
           )
         })}
       </div>
+      <TechIcons />
       <div className={Styles.experienceResumeBtn}>
         <a className={`cta-secondary ${Styles.experienceResume}`} href="#" >View Resume</a>
       </div>

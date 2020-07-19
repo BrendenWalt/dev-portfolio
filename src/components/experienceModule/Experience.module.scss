@@ -9,11 +9,27 @@
   justify-content: space-between;
   align-items: flex-start;
   position: relative;
+  padding-bottom: 3.5rem;
 }
 
 .experienceDescription {
   margin-top: 1rem;
   text-align: justify;
+}
+
+.experienceItemContainer {
+  position: relative;
+  &:before {
+    content: "";
+    position: absolute;
+    width: 500%;
+    height: 75px;
+    background-color: $color-secondary;
+    top: 50%;
+    left: -100%;
+    transform: translateY(calc(-50% - 2rem));
+    z-index: 0;
+  }
 }
 
 .experienceModule {
@@ -30,5 +46,4 @@
 
 .experienceResume {
   display: inline-block;
-  margin-top: 45px;
 }

@@ -51,16 +51,11 @@
   background-size: auto;
   background-repeat: no-repeat;
   background-position: 110% 15px;
-  margin-bottom: 2rem;
+  margin-bottom: 4rem;
   padding: 3.25rem 10% 1.25rem 1.25rem;
   position: relative;
   width: 65%;
-  &:after {
-    content: "";
-    position: absolute;
-    
-  }
- 
+  z-index: 0;
   &:nth-of-type(2n) {
     align-self: flex-end;
     background-position: -10% 15px;
