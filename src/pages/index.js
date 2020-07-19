@@ -14,7 +14,7 @@ import Experience from "../components/experienceModule/Experience"
 import Photog from "../components/photogModule/Photog"
 import Contact from "../components/contactModule/Contact"
 import Instagram from "../components/instagramModule/Instagram-feed"
-import TechIcons from "../components/techIconsModule/TechIcons"
+// import TechIcons from "../components/techIconsModule/TechIcons"
 import ToTop from "../components/totopModule/ToTop"
 
 const IndexPage = ({data}) => {
@@ -31,7 +31,6 @@ const IndexPage = ({data}) => {
         {/* <PhotoDivider /> */}
         <About />
         <Experience />
-        <TechIcons />
         <Photog />
         <Instagram />
         <Contact />
