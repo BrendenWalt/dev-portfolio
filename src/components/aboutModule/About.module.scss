@@ -2,6 +2,15 @@
 
 $offset: 20px;
 
+@keyframes wave {
+  from { 
+    transform: rotate(-30deg); 
+  }
+  to { 
+    transform: rotate(30deg); 
+  }
+}
+
 .aboutSection {
   background-color: $color-teal;
   padding: 8vh 0 10vh;
@@ -117,4 +126,14 @@ $offset: 20px;
     height: 100%;
     border: 4px solid $color-salmon;
   }
+}
+
+.aboutWave {
+  animation: wave 1.25s infinite;
+  animation-direction: alternate;
+  animation-timing-function: ease-in-out;
+  display: inline-block;
+  transform-origin: 50% 80%;
+  font-size: 6rem;
+  position: relative;
 }
