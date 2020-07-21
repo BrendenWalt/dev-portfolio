@@ -25,7 +25,7 @@ $offset: 20px;
   align-items: center;
   justify-content: center;
   position: relative;
-  width: calc(100% - 50px);
+  width: calc(90% - 50px);
   max-width: 1100px;
 }
 
@@ -34,14 +34,16 @@ $offset: 20px;
   flex-direction: row;
   justify-content: center;
   align-items: center;
-  max-width: 1200px;
+  max-width: 1400px;
   margin: 0 auto;
+  position: relative;
 }
 
 .aboutContent {
   z-index: 0;
   flex: 1.25 0 auto;
   margin-right: -$offset * 2;
+  margin-top: -125px;
   width: 50%;
   div {
     box-shadow: 4px 4px 20px 0px rgba(0, 0, 0, 0.3);
@@ -62,8 +64,6 @@ $offset: 20px;
       text-align: justify;
     }
   }
-  
- 
 }
 
 .aboutHeader {
@@ -75,7 +75,7 @@ $offset: 20px;
     position: absolute;
     background-color: $color-orange;
     height: 110%;
-    width: 80%;
+    width: 50px;
     left: 100%;
     top: 50%;
     transform: translate(-50%, -50%);
@@ -103,9 +103,7 @@ $offset: 20px;
 }
 
 .aboutPortrait {
-  
-
-  flex: 0 1 455%;
+  flex: 0 1 45%;
   max-width: 450px;
   position: relative;
   &:before {
