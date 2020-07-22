@@ -1,5 +1,13 @@
 @import "../../styles/utils/variables";
 
+.contactContent {
+  display: flex;
+  position: relative;
+  justify-content: center;
+  max-width: 1400px;
+  margin: 0 auto;
+}
+
 .contactForm {
   box-shadow: 0px 0px 20px 5px rgba(0, 0, 0, 0.25);
   margin: 0 auto 1.85em;
@@ -34,7 +42,8 @@
 .contactHeader {
   display: inline-block;
   text-align: center;
-  position: relative;
+  position: absolute;
+  left: 0;
   &:before {
     content: '';
     position: absolute;
@@ -118,11 +127,6 @@
 .contactModule {
   background-color: $color-primary;
   padding: 4rem 2rem 4rem;
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  justify-content: center;
-  align-items: center;
   overflow: hidden;
 }
 
