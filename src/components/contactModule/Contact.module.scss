@@ -3,6 +3,7 @@
 .contactContent {
   display: flex;
   position: relative;
+  align-items: center;
   justify-content: center;
   max-width: 1400px;
   margin: 0 auto;
@@ -127,7 +128,7 @@
 
 .contactModule {
   background-color: $color-primary;
-  padding: calc(4rem + 66px) 2rem 4rem;
+  padding: 4rem 2rem 4rem;
   overflow: hidden;
 }
 
