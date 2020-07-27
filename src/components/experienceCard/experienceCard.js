@@ -7,8 +7,8 @@ const ExperienceCard = (props) => {
 
   const [active, setActive] = useState(false);
 
-  const toggleAccordion = (e) => {
-    e.preventDefault();
+  const toggleAccordion = event => {
+    event.preventDefault();
     setActive(!active);
   }
 
@@ -29,7 +29,12 @@ const ExperienceCard = (props) => {
       
       <p className={Styles.experienceRange}>{info.date_range}</p>
       <p className={Styles.experienceDescription}>{info.description}</p>
-      <div className={`${Styles.experienceAccordion}${active ? ' open' : ''}`} onClick={toggleAccordion} role="presentation">
+      <div 
+        className={`${Styles.experienceAccordion}${active ? ' open' : ''}`} 
+        onClick={toggleAccordion} 
+        onKeyDown={toggleAccordion}
+        role="button"
+      >
         <span className={Styles.accIcon}>
           <FaCaretRight />
         </span> More Details...

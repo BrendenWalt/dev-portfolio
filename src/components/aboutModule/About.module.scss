@@ -13,7 +13,7 @@ $offset: 20px;
 
 .aboutSection {
   background-color: $color-teal;
-  padding: 8vh 0 10vh;
+  padding: 8vh calc(1% + 20px) 10vh 5%;
   overflow: hidden;
   position: relative;
 }
@@ -27,6 +27,9 @@ $offset: 20px;
   position: relative;
   // width: calc(90% - 50px);
   max-width: 1100px;
+  @media screen and (max-width: $screen-xl) {
+    margin-left: calc(3vw + 100px);
+  }
 }
 
 .aboutContainer {
@@ -41,10 +44,9 @@ $offset: 20px;
 
 .aboutContent {
   z-index: 0;
-  flex: 1.25 0 auto;
+  flex: 1.25 0 0;
   margin-right: -$offset * 2;
   margin-top: -125px;
-  width: 50%;
   div {
     box-shadow: 4px 4px 20px 0px rgba(0, 0, 0, 0.3);
      background-color: $color-white;
@@ -64,6 +66,7 @@ $offset: 20px;
       text-align: justify;
     }
   }
+ 
 }
 
 .aboutHeader {
