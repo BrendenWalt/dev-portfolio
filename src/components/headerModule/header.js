@@ -1,19 +1,15 @@
 import { Link } from "gatsby"
 import PropTypes from "prop-types"
-import React, {useState, Component} from "react"
+import React, {useState } from "react"
 import { AnchorLink } from "gatsby-plugin-anchor-links"
-// import Img from "gatsby-image"
 
 import Styles from "./header.module.scss"
 
-const Header = ({ siteTitle }) => {
+const Header = () => {
 // class Header extends Component {
 
   const [scroll, setScroll] = useState(false);
-  
-  // componentDidMount() {
 
-  // }
 
   window.addEventListener('scroll', () => {
     if (window.scrollY > 800) {

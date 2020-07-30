@@ -1,9 +1,7 @@
-import React, {useState} from "react"
+import React from "react"
 import { useStaticQuery, graphql } from "gatsby"
 import ExperienceCard from '../experienceCard/experienceCard'
 import TechIcons from '../techIconsModule/TechIcons'
-import Img from "gatsby-image"
-import BackgroundImage from "gatsby-background-image"
 
 import Styles from "./Experience.module.scss"
 
@@ -55,7 +53,7 @@ const Experience = () => {
       </div>
       <TechIcons />
       <div className={Styles.experienceResumeBtn}>
-        <a className={`cta-secondary ${Styles.experienceResume}`} href="#" >View Resume</a>
+        <a className={`cta-secondary ${Styles.experienceResume}`} href="#">View Resume</a>
       </div>
     </div>
   )
