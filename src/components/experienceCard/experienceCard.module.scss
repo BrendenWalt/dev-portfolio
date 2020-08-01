@@ -16,13 +16,14 @@
 }
 
 .companyLogo {
+  // background-color: #ffffff;
   position: absolute;
   top: 0px;
   right: 0%;
   width: 100%;
   height: 100%;
   overflow: hidden;
-  z-index: -1;
+  z-index: 0;
   > div {
     position: absolute;
     top: 15px;
@@ -55,17 +56,32 @@
   padding: 3.25rem 10% 1.25rem 1.25rem;
   position: relative;
   width: 65%;
-  z-index: 0;
+  // z-index: 0;
+  &:before {
+    content: "";
+    position: absolute;
+    bottom: -$offset;
+    right: -$offset;
+    width: 100%;
+    height: 100%;
+    z-index: -2;
+    border: 3px solid $color-salmon;
+  }
   &:nth-of-type(2n) {
     align-self: flex-end;
     background-position: -10% 15px;
     text-align: right;
     padding-left: 10%;
     padding-right: 1.25rem;
+    position: relative;
     .companyLogo div:first-child{
       left: -7%;
     }
+    &:before {
+      left: -$offset;
+    }
   }
+ 
 }
 
 .experienceRange,
