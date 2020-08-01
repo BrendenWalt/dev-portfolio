@@ -38,6 +38,10 @@
     border: 4px solid $primary-accent;
     z-index: -1;
   }
+  @media only screen and (max-width: $screen-xl) {
+    width: auto;
+    margin-left: calc(3vw + 100px);
+  }
 }
 
 .contactHeader {
@@ -69,7 +73,6 @@
   }
   h2 {
     color: $color-dark;
-    letter-spacing: 0.5rem;
     position: relative;
     writing-mode: vertical-rl;
     transform: rotate(-180deg);
