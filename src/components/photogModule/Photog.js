@@ -12,7 +12,7 @@ const Photog = () => {
         allImageSharp(filter: {original: {src: {regex: "/photog-sample/"}}}, sort: {order: ASC, fields: original___src}) {
           edges {
             node {
-              fluid(quality: 80, maxWidth: 800) {
+              fluid(quality: 80, maxWidth: 1400) {
                 ...GatsbyImageSharpFluid
               }
             }
