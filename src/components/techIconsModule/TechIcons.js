@@ -11,7 +11,13 @@ import {
   FaPhp,
   FaRebel
 } from "react-icons/fa"
-import Lrc from "../../images/icons/lrc.svg"
+import {
+  SiAdobelightroomclassic,
+  SiAdobephotoshop,
+  SiAdobexd,
+  SiAdobepremiere,
+  SiAdobeaftereffects,
+} from "react-icons/si"
 
 
 import Styles from "./TechIcons.module.scss"
@@ -52,10 +58,19 @@ const TechIcons = () => {
           <FaPhp title="PHP" />
         </div>
         <div className={Styles.techIcon}>
-          <img src={Lrc} alt="Lightroom Classic" title="Lightroom Classic" />
+          <SiAdobelightroomclassic title="Lightroom Classic" />
         </div>
         <div className={Styles.techIcon}>
-          <img src={Lrc} alt="Lightroom Classic" title="Lightroom Classic" />
+          <SiAdobephotoshop title="Photoshop" />
+        </div>
+        <div className={Styles.techIcon}>
+          <SiAdobexd title="XD"/>
+        </div>
+        <div className={Styles.techIcon}>
+          <SiAdobepremiere title="Premiere" />
+        </div>
+        <div className={Styles.techIcon}>
+          <SiAdobeaftereffects title="After Effects" />
         </div>
       </div>
     </div>
