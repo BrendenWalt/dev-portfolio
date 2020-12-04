@@ -21,54 +21,33 @@ const Header = () => {
   })
     
   return (
-    <header className={`${Styles.header} ${scroll && Styles.header_dark}`} >
-      <div className={Styles.headerContainer} >
+    <header className={`${Styles.header} ${scroll && Styles.header_dark}`}>
+      <div className={Styles.headerContainer}>
         <div className={Styles.headerLogo}>
           <Link to="/">
             {/* {siteTitle} */}
             {/* <Img fluid={data.file.childImageSharp.fluid} /> */}
-            <div className={Styles.headerLogoWrap}>
-              BW
-          </div>
+            <div className={Styles.headerLogoWrap}>BW</div>
           </Link>
         </div>
         <div className={Styles.navContainer}>
           <ul>
             <li className={Styles.navLink}>
-              <AnchorLink
-                to="/#about-me"
-                stripHash
-              >
+              <AnchorLink to="/#portfolio">Portfolio</AnchorLink>
+            </li>
+            <li className={Styles.navLink}>
+              <AnchorLink to="/#about-me" stripHash>
                 About
-            </AnchorLink>
+              </AnchorLink>
             </li>
             <li className={Styles.navLink}>
-              <AnchorLink
-                to="/#portfolio"
-              >
-                Portfolio
-            </AnchorLink>
+              <AnchorLink to="/#experience">Experience</AnchorLink>
             </li>
             <li className={Styles.navLink}>
-              <AnchorLink
-                to="/#experience"
-              >
-                Experience
-            </AnchorLink>
+              <AnchorLink to="/#photography">Photography</AnchorLink>
             </li>
             <li className={Styles.navLink}>
-              <AnchorLink
-                to="/#photography"
-              >
-                Photography
-            </AnchorLink>
-            </li>
-            <li className={Styles.navLink}>
-              <AnchorLink
-                to="/#contact"
-              >
-                Contact
-            </AnchorLink>
+              <AnchorLink to="/#contact">Contact</AnchorLink>
             </li>
           </ul>
         </div>
