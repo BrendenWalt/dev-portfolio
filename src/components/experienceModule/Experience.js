@@ -38,6 +38,7 @@ const Experience = () => {
   
   console.log(data);
   return (
+    <>
     <div className={`${Styles.experienceModule} content-module`} name="experience" id="experience">
       <h2>Experience</h2>
       <div className={Styles.experienceList}>
@@ -51,11 +52,13 @@ const Experience = () => {
           )
         })}
       </div>
-      <TechIcons />
+      
       <div className={Styles.experienceResumeBtn}>
         <a className={`cta-secondary ${Styles.experienceResume}`} href="#">View Resume</a>
       </div>
     </div>
+    <TechIcons />
+    </>
   )
 } 
 

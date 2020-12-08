@@ -1,7 +1,7 @@
 @import "../../styles/utils/variables";
 
 .techIconsModule {
-  background-color: $color-primary;
+  background-color: $color-white;
 }
 
 .techIconsContainer {
@@ -16,39 +16,40 @@
 }
 
 .techIcon {
-  color: $color-white;
+  color: $color-primary;
   display: flex;
   justify-content: center;
   align-items: center;
   font-size: 5rem;
   text-align: center;
   margin: 1.25rem 0;
+  opacity: 0.75;
   img {
     max-width: 70px;
   }
 }
 
-.techDivider {
-  width: 80%;
-  height: 20px;
-  max-width: 600px;
-  margin: 0 auto;
-  position: relative;
-  &:before {
-    content: '';
-    position: absolute;
-    width: 90%;
-    left:0;
-    top: 0;
-    border-top: 4px solid $color-teal;
-  }
-  &:after {
-    content: '';
-    position: absolute;
-    height: 100%;
-    width: 90%;
-    right: 0;
-    bottom: 0;
-    border-bottom: 4px solid $color-salmon;
-  }
-}
+// .techDivider {
+//   width: 80%;
+//   height: 20px;
+//   max-width: 600px;
+//   margin: 0 auto;
+//   position: relative;
+//   &:before {
+//     content: '';
+//     position: absolute;
+//     width: 90%;
+//     left:0;
+//     top: 0;
+//     border-top: 4px solid $color-teal;
+//   }
+//   &:after {
+//     content: '';
+//     position: absolute;
+//     height: 100%;
+//     width: 90%;
+//     right: 0;
+//     bottom: 0;
+//     border-bottom: 4px solid $color-salmon;
+//   }
+// }

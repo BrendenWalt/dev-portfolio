@@ -22,56 +22,33 @@ import {
 
 import Styles from "./TechIcons.module.scss"
 
+const iconList = [
+  <FaHtml5 title="HTML5" />,
+  <FaJsSquare title="Javascript" />,
+  <FaReact title="ReactJS" />,
+  <FaAngular title="AngularJS" />,
+  <FaCss3Alt title="CSS" />,
+  <FaSass title="Sass" />,
+  <FaWordpress title="Wordpress" />,
+  <FaGithub title="Github" />,
+  <FaRebel title="Rebel Alliance" />,
+  <FaPhp title="PHP" />,
+  <SiAdobelightroomclassic title="Lightroom Classic" />,
+  <SiAdobephotoshop title="Photoshop" />,
+  <SiAdobexd title="XD"/>,
+  <SiAdobepremiere title="Premiere" />,
+  <SiAdobeaftereffects title="After Effects" />
+]
+
 const TechIcons = () => {
   return (
     <div className={Styles.techIconsModule}>
-      <div className={Styles.techDivider} />
       <div className={Styles.techIconsContainer}>
-        <div className={Styles.techIcon}>
-          <FaHtml5 title="HTML5" />
-        </div>
-        <div className={Styles.techIcon}>
-          <FaJsSquare title="Javascript" />
-        </div>
-        <div className={Styles.techIcon}>
-          <FaReact title="ReactJS" />
-        </div>
-        <div className={Styles.techIcon}>
-          <FaAngular title="AngularJS" />
-        </div>
-        <div className={Styles.techIcon}>
-          <FaCss3Alt title="CSS" />
-        </div>
-        <div className={Styles.techIcon}>
-          <FaSass title="Sass" />
-        </div>
-        <div className={Styles.techIcon}>
-          <FaWordpress title="Wordpress" />
-        </div>
-        <div className={Styles.techIcon}>
-          <FaGithub title="Github" />
-        </div>
-        <div className={Styles.techIcon}>
-          <FaRebel title="Rebel Alliance" />
-        </div>
-        <div className={Styles.techIcon}>
-          <FaPhp title="PHP" />
-        </div>
-        <div className={Styles.techIcon}>
-          <SiAdobelightroomclassic title="Lightroom Classic" />
-        </div>
-        <div className={Styles.techIcon}>
-          <SiAdobephotoshop title="Photoshop" />
-        </div>
-        <div className={Styles.techIcon}>
-          <SiAdobexd title="XD"/>
-        </div>
-        <div className={Styles.techIcon}>
-          <SiAdobepremiere title="Premiere" />
-        </div>
-        <div className={Styles.techIcon}>
-          <SiAdobeaftereffects title="After Effects" />
-        </div>
+        {iconList.map(icon => (
+          <div className={Styles.techIcon}>
+            {icon}
+          </div>
+        ))}
       </div>
     </div>
   )

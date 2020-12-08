@@ -2,7 +2,11 @@
 
 .photogModule {
   margin-bottom: -2px;
+  h2 {
+    display: none;
+  }
 }
+
 
 .photogGrid {
   display: grid;
