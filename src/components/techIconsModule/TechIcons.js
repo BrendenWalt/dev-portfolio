@@ -43,6 +43,7 @@ const iconList = [
 const TechIcons = () => {
   return (
     <div className={Styles.techIconsModule}>
+      {/* <div className={Styles.techDivider}></div> */}
       <div className={Styles.techIconsContainer}>
         {iconList.map(icon => (
           <div className={Styles.techIcon}>

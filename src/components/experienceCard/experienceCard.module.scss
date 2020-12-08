@@ -1,13 +1,6 @@
 @import "../../styles/utils/variables";
 
-.open {
-  background-color: #ff0000;
-}
-.open .accIcon {
-  svg {
-    transform: rotate(90deg);
-  }
-}
+
 .accIcon {
   svg {
     vertical-align: middle;
@@ -38,6 +31,14 @@
   position: relative;
   text-align: left;
   z-index: 2;
+  &.open {
+  
+  }
+  &.open .accIcon {
+    svg {
+      transform: rotate(90deg);
+    }
+  }
 }
 .experienceAccordionContent {
   display: none;

@@ -1,5 +1,17 @@
 import React, {useState} from 'react'
 import { FaCaretRight } from 'react-icons/fa'
+import {
+  FaHtml5,
+  FaCss3Alt,
+  FaSass,
+  FaWordpress,
+  FaJsSquare,
+  FaReact,
+  FaAngular,
+  FaGithub,
+  FaPhp,
+  FaRebel
+} from "react-icons/fa"
 import Styles from './experienceCard.module.scss'
 import Img from "gatsby-image"
 
@@ -13,6 +25,13 @@ const ExperienceCard = (props) => {
   }
 
   const info = props.info;
+
+  const icons = [
+    {
+      name: 'HTML',
+      icon: <FaHtml5 title="HTML5" />
+    }
+  ]
 
   return (
     <div className={Styles.experienceItem} key={info.id}>
@@ -30,14 +49,14 @@ const ExperienceCard = (props) => {
       <p className={Styles.experienceRange}>{info.date_range}</p>
       <p className={Styles.experienceDescription}>{info.description}</p>
       <div 
-        className={`${Styles.experienceAccordion}${active ? ' open' : ''}`} 
+        className={`${Styles.experienceAccordion} ${active ? Styles.open : ''}`} 
         onClick={toggleAccordion} 
         onKeyDown={toggleAccordion}
         role="button"
       >
         <span className={Styles.accIcon}>
           <FaCaretRight />
-        </span> More Details...
+        </span> {active ? 'Less' : 'More...'}
         <div className={Styles.experienceAccordionContent}>
           <ul className={Styles.experienceTraits}>
             {info.list.map((item) => {
@@ -48,9 +67,18 @@ const ExperienceCard = (props) => {
           </ul>
           <ul className={Styles.experienceSkills}>
             {info.skills_list.map((skill) => {
-              return (
-                <li>{skill}</li>
-              )
+              for (var i = 0; i < icons.length; i++) {
+                if(icons[i].name === skill) {
+                  return (
+                  <li>{icons[i].icon}</li>
+                  )
+                }
+                else {
+                  return (
+                    <li>{skill}</li>
+                  );
+                }
+              }
             })}
           </ul>
         </div>
