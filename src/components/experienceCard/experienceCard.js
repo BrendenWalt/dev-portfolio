@@ -9,7 +9,8 @@ import {
   FaReact,
   FaAngular,
   FaGithub,
-  FaPhp
+  FaPhp,
+  FaSquarespace
 } from "react-icons/fa"
 import Styles from './experienceCard.module.scss'
 import Img from "gatsby-image"
@@ -61,6 +62,10 @@ const ExperienceCard = (props) => {
     {
       name: 'Php',
       icon: <FaPhp title="PHP"/>
+    },
+    {
+      name: 'Squarespace',
+      icon: <FaSquarespace title="Squarespace"/>
     }
   ]
 
@@ -90,6 +95,7 @@ const ExperienceCard = (props) => {
         </span> {active ? 'Less' : 'More...'}
         <div className={Styles.experienceAccordionContent}>
           <ul className={Styles.experienceTraits}>
+            {console.log("info ", info.skills_list)}
             {info.list.map((item) => {
               return (
                 <li>{item}</li>
@@ -98,20 +104,14 @@ const ExperienceCard = (props) => {
           </ul>
           <ul className={Styles.experienceSkills}>
             {info.skills_list.map((skill) => {
+              let skillItem = <li>{skill}</li>
               for (let i = 0; i < icons.length; i++) {
-                console.log(icons[i].name);
-                if(icons[i].name.toLowerCase() === skill.toLowerCase()) {
-                  return (
-                    <li>{icons[i].icon}</li>
-                  )
+                if(icons[i].name.toLowerCase() == skill.toLowerCase()) {
+                  skillItem = <li>{icons[i].icon}</li>;
+                  return skillItem
                 }
-                else {
-                  return (
-                    <li>{skill}</li>
-                  );
-                }
-                i++;
               }
+              return skillItem;
             })}
           </ul>
         </div>
