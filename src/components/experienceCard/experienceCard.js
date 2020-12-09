@@ -41,7 +41,7 @@ const ExperienceCard = (props) => {
     },
     {
       name: 'Wordpress',
-      icon: <FaWordpress title="wordpress" />
+      icon: <FaWordpress title="Wordpress" />
     },
     {
       name: 'Javascript',
@@ -91,8 +91,8 @@ const ExperienceCard = (props) => {
         role="button"
       >
         <span className={Styles.accIcon}>
-          <FaCaretRight />
-        </span> {active ? 'Less' : 'More...'}
+          <FaCaretRight />{active ? ' Less' : ' More...'}
+        </span>
         <div className={Styles.experienceAccordionContent}>
           <ul className={Styles.experienceTraits}>
             {console.log("info ", info.skills_list)}
@@ -108,7 +108,7 @@ const ExperienceCard = (props) => {
               for (let i = 0; i < icons.length; i++) {
                 if(icons[i].name.toLowerCase() == skill.toLowerCase()) {
                   skillItem = <li>{icons[i].icon}</li>;
-                  return skillItem
+                  return skillItem;
                 }
               }
               return skillItem;
