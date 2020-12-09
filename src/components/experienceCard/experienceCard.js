@@ -9,8 +9,7 @@ import {
   FaReact,
   FaAngular,
   FaGithub,
-  FaPhp,
-  FaRebel
+  FaPhp
 } from "react-icons/fa"
 import Styles from './experienceCard.module.scss'
 import Img from "gatsby-image"
@@ -30,6 +29,38 @@ const ExperienceCard = (props) => {
     {
       name: 'HTML',
       icon: <FaHtml5 title="HTML5" />
+    },
+    {
+      name: 'CSS',
+      icon: <FaCss3Alt title="CSS" />
+    },
+    {
+      name: 'Sass',
+      icon: <FaSass title="Sass" />
+    },
+    {
+      name: 'Wordpress',
+      icon: <FaWordpress title="wordpress" />
+    },
+    {
+      name: 'Javascript',
+      icon: <FaJsSquare title="Javascript"/>
+    },
+    {
+      name: 'React',
+      icon: <FaReact title="React" />
+    },
+    {
+      name: 'Angular',
+      icon: <FaAngular title="AngularJS"/>
+    },
+    {
+      name: 'Github',
+      icon: <FaGithub title="Github"/>
+    },
+    {
+      name: 'Php',
+      icon: <FaPhp title="PHP"/>
     }
   ]
 
@@ -67,10 +98,11 @@ const ExperienceCard = (props) => {
           </ul>
           <ul className={Styles.experienceSkills}>
             {info.skills_list.map((skill) => {
-              for (var i = 0; i < icons.length; i++) {
-                if(icons[i].name === skill) {
+              for (let i = 0; i < icons.length; i++) {
+                console.log(icons[i].name);
+                if(icons[i].name.toLowerCase() === skill.toLowerCase()) {
                   return (
-                  <li>{icons[i].icon}</li>
+                    <li>{icons[i].icon}</li>
                   )
                 }
                 else {
@@ -78,6 +110,7 @@ const ExperienceCard = (props) => {
                     <li>{skill}</li>
                   );
                 }
+                i++;
               }
             })}
           </ul>
