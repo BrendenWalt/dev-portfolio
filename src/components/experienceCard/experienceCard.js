@@ -1,5 +1,4 @@
 import React, {useState} from 'react'
-import { FaCaretRight } from 'react-icons/fa'
 import {
   FaHtml5,
   FaCss3Alt,
@@ -10,8 +9,18 @@ import {
   FaAngular,
   FaGithub,
   FaPhp,
-  FaSquarespace
+  FaSquarespace,
+  FaCaretRight
 } from "react-icons/fa"
+import {
+  SiAdobelightroomclassic,
+  SiAdobephotoshop,
+  SiAdobexd,
+  SiAdobepremiere,
+  SiAdobeaftereffects,
+  SiAdobedreamweaver,
+} from "react-icons/si"
+import {BsLightning} from 'react-icons/bs'
 import Styles from './experienceCard.module.scss'
 import Img from "gatsby-image"
 
@@ -66,6 +75,22 @@ const ExperienceCard = (props) => {
     {
       name: 'Squarespace',
       icon: <FaSquarespace title="Squarespace"/>
+    },
+    {
+      name: 'Photoshop',
+      icon: <SiAdobephotoshop title="Photoshop"/>
+    },
+    {
+      name: 'Adobe Premiere',
+      icon: <SiAdobepremiere title="Adobe Premiere"/>
+    },
+    {
+      name: 'Adobe After Effects',
+      icon: <SiAdobeaftereffects title="Adobe After Effects" />
+    },
+    {
+      name: 'Dreamweaver',
+      icon: <SiAdobedreamweaver title="Dreamweaver"/>
     }
   ]
 
@@ -98,7 +123,7 @@ const ExperienceCard = (props) => {
             {console.log("info ", info.skills_list)}
             {info.list.map((item) => {
               return (
-                <li>{item}</li>
+                <li><BsLightning /> Aliquip incididunt incididunt velit laborum veniam. Voluptate reprehenderit sunt non sint minim enim consequat Lorem. Exercitation excepteur laboris id do anim in occaecat amet. {item}</li>
               )
             })}
           </ul>
