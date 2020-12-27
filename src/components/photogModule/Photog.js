@@ -22,8 +22,6 @@ const Photog = () => {
     `
   );
 
-  console.log(images.allImageSharp.edges);
-
   return (
     <div className={`${Styles.photogModule} content-module`} name="photography" id="photography">
       <h2>Photography</h2>
