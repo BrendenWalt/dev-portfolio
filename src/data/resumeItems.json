@@ -6,7 +6,7 @@
     "date_range": "2016 - Present",
     "description": "Black, so irish coffee siphon extraction variety fair trade sit steamed mazagran. Filter cappuccino, crema trifecta mug viennese medium mocha to go. Plunger pot decaffeinated coffee wings acerbic extra aroma skinny strong aftertaste. Sit aftertaste robust irish brewed french press milk caffeine. Viennese acerbic half and half spoon mazagran redeye aroma.",
     "list": [
-      "list item 1",
+      "list item <strong>1<\/strong>",
       "list item 2",
       "list item 3"
     ],
