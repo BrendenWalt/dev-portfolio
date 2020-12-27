@@ -2,6 +2,7 @@ import React from "react"
 import { useStaticQuery, graphql } from "gatsby"
 import ExperienceCard from '../experienceCard/experienceCard'
 import TechIcons from '../techIconsModule/TechIcons'
+import Resume from '../../docs/Brenden_Walters_resume2020.pdf'
 
 import Styles from "./Experience.module.scss"
 
@@ -36,7 +37,6 @@ const Experience = () => {
     `
   )
   
-  console.log(data);
   return (
     <>
     <div className={`${Styles.experienceModule} content-module`} name="experience" id="experience">
@@ -54,7 +54,7 @@ const Experience = () => {
       </div>
       
       <div className={Styles.experienceResumeBtn}>
-        <a className={`cta-secondary ${Styles.experienceResume}`} href="#">View Resume</a>
+        <a className={`cta-secondary ${Styles.experienceResume}`} href={Resume}>View Resume</a>
       </div>
     </div>
     <TechIcons />
