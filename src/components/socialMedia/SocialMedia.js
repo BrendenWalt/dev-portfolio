@@ -12,17 +12,17 @@ const SocialMedia = (props) => {
     >
       <ul>
         <li className={Styles.socialmediaIcon}>
-          <a href="http://link">
+          <a href="https://www.instagram.com/brenden_walters/" target="_blank">
             <FaInstagram />
           </a>
         </li>
         <li className={Styles.socialmediaIcon}>
-          <a href="http://link">
+          <a href="https://www.linkedin.com/in/brendenwalters/" target="_blank">
             <FaLinkedin />
           </a>
         </li>
         <li className={Styles.socialmediaIcon}>
-          <a href="http://link">
+          <a href="https://github.com/BrendenWalt" target="_blank">
             <FaGithub />
           </a>
         </li>
