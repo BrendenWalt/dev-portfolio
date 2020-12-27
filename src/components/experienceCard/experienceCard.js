@@ -108,7 +108,7 @@ const ExperienceCard = (props) => {
       </div>
       
       <p className={Styles.experienceRange}>{info.date_range}</p>
-      <p className={Styles.experienceDescription}>{info.description}</p>
+      <p className={Styles.experienceDescription} dangerouslySetInnerHTML={{__html: info.description}}></p>
       <div 
         className={`${Styles.experienceAccordion} ${active ? Styles.open : ''}`} 
         onClick={toggleAccordion} 
@@ -120,17 +120,9 @@ const ExperienceCard = (props) => {
         </span>
         <div className={Styles.experienceAccordionContent}>
           <ul className={Styles.experienceTraits}>
-            {console.log("info ", info.skills_list)}
-            {/* {const itemText = JSON.parse(item)} */}
             {info.list.map((item) => {
-              // const itemText = JSON.parse(item)
-              const markup = new DOMParser().parseFromString(item, "text/html").body.firstChild;
-              console.log(markup)
-              // var text = document.createElement('div');
-              // text.innerHTML = item;
-              console.log("item", item)
               return (
-                <li><BsLightning /> Aliquip incididunt incididunt velit laborum veniam. Voluptate reprehenderit sunt non sint minim enim consequat Lorem. Exercitation excepteur laboris id do anim in occaecat amet. {item}</li>
+                <li><BsLightning /><span dangerouslySetInnerHTML={{__html: item}}></span></li>
               )
             })}
           </ul>
