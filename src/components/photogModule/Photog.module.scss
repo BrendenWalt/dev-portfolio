@@ -7,13 +7,18 @@
   }
 }
 
-
 .photogGrid {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   grid-template-rows: repeat(3, 33.3%);
   height: 100vh;
   margin: 0 auto;
+  @include sm {
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+    grid-auto-rows: min-content;
+    // height: auto;
+  }
 }
 
 .photogGridItem {
@@ -36,5 +41,12 @@
   &:nth-of-type(4) {
     grid-column-start: 3;
     grid-row: 2 / span 2;
+  }
+  @include sm {
+    grid-column: auto !important;
+    grid-row: auto !important;
+    img {
+      height: auto;
+    }
   }
 }

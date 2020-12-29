@@ -3,6 +3,9 @@
 .hero {
   height: 90vh;
   position: relative;
+  @include md {
+    height: 100vh;
+  }
 }
 
 .heroBg {
@@ -43,12 +46,18 @@
   justify-content: center;
   position: relative;
   z-index: 1;
+  @include md {
+    flex-direction: column;
+  }
 }
 
 .heroInfoCard {
   position: relative;
   padding: 10px 0.75rem 0.25rem;
   text-align: center;
+  @include md {
+    margin-top: 20%;
+  }
 }
 
 .heroInfoCardBox {
@@ -78,6 +87,9 @@
     border-top: 2px solid $color-white;
     width: 5%;
   }
+  @include md {
+    width: 90%;
+  }
 }
 
 .heroSocialmedia {
@@ -86,6 +98,12 @@
   top: calc(50% + 10px);
   transform: translateY(-50%);
   z-index: 5;
+  @include md {
+    bottom: 0;
+    position: relative;
+    transform: translateY(0);
+    margin-top: 10%;
+  }
 }
 
 .heroSubtitle {

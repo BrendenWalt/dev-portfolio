@@ -33,10 +33,11 @@ const About = () => {
             <Img fluid={Data.file.childImageSharp.fluid} />
           </div>
           <div className={Styles.aboutContent}>
-            <span className={Styles.aboutWave} role="img" aria-label="hello">&#x270B;</span>
+            
             <div>
               <p>This is where I will write about what I do with my life.  I can include details about photography and making stuff for the internet.  For now, I am just leaving this placeholder content </p>
             </div>
+            <span className={Styles.aboutWave} role="img" aria-label="hello">&#x270B;</span>
           </div>
         </div>
       </div>

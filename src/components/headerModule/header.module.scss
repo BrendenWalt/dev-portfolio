@@ -5,6 +5,9 @@ header.header {
   position: fixed;
   top: 0;
   z-index: 5;
+  @include md {
+    position: absolute;
+  }
 }
 
 .headerContainer {
@@ -15,13 +18,19 @@ header.header {
   margin: 0 auto;
   max-width: 1500px;
   padding: 2.25rem 1.0875rem;
+  @include md {
+    justify-content: center;
 
+  }
 }
 
 .headerLogo {
   max-width: 200px;
   width: 50%;
   transition: transform 0.3s ease-in-out;
+  @include md {
+    width: 40% !important;
+  }
 }
 
 .headerLogoWrap {
@@ -93,6 +102,9 @@ header.header {
     a {
       color: #ffffff;
     }
+  }
+  @include md {
+    display: none;
   }
 }
 .navLink {

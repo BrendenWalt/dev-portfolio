@@ -29,5 +29,8 @@
 
 .socialmedia.socialmediaVertical ul li {
   display: block;
+  @include md {
+    display: inline-block;
+  }
 }
 

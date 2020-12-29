@@ -16,6 +16,9 @@ $offset: 20px;
   padding: 8vh calc(1% + 20px) 10vh 5%;
   overflow: hidden;
   position: relative;
+  @include md {
+    padding-top: 0;
+  }
 }
 
 .aboutCard {
@@ -27,8 +30,13 @@ $offset: 20px;
   position: relative;
   // width: calc(90% - 50px);
   max-width: 1100px;
-  @media screen and (max-width: $screen-xl) {
+  @include xl {
     margin-left: calc(3vw + 100px);
+  }
+  @include md {
+    margin-left: 0;
+    margin-top: 5vh;
+    flex-direction: column;
   }
 }
 
@@ -40,6 +48,9 @@ $offset: 20px;
   max-width: 1400px;
   margin: 0 auto;
   position: relative;
+  @include md {
+    flex-direction: column;
+  }
 }
 
 .aboutContent {
@@ -47,6 +58,7 @@ $offset: 20px;
   flex: 1.25 0 0;
   margin-right: -$offset * 2;
   margin-top: -125px;
+  position: relative;
   div {
     box-shadow: 4px 4px 20px 0px rgba(0, 0, 0, 0.3);
      background-color: $color-white;
@@ -66,7 +78,11 @@ $offset: 20px;
       text-align: justify;
     }
   }
- 
+ @include md {
+   margin-right: 0;
+   margin-top: calc(#{$offset} * 3);
+   padding: 0px 2%;
+ }
 }
 
 .aboutHeader {
@@ -102,6 +118,28 @@ $offset: 20px;
     transform: rotate(-180deg);
     z-index: 2;
   }
+  @include md {
+    position: relative;
+    padding-top: 5vh;
+    margin-bottom: 20px;
+    h2 {
+      writing-mode: initial;
+      transform: rotate(0);
+    }
+    &:before {
+      height: 33%;
+      width: 100%;
+      bottom: 0;
+      transform: translate(-85%, 100%);
+    }
+    &:after {
+      height: 100%;
+      top: 0;
+      right: 50%;
+      width: 110vw;
+      transform: translate(50%, 0);
+    }
+  }
 }
 
 .aboutPortrait {
@@ -126,6 +164,12 @@ $offset: 20px;
     height: 100%;
     border: 4px solid $color-salmon;
   }
+  @include md {
+    width: 75%;
+    &:before {
+      left: calc(-1 * (#{$offset} / 2));
+    }
+  }
 }
 
 .aboutWave {
@@ -135,5 +179,7 @@ $offset: 20px;
   display: inline-block;
   transform-origin: 50% 80%;
   font-size: 6rem;
-  position: relative;
+  position: absolute;
+  top: calc(-100% - #{$offset});
+
 }
