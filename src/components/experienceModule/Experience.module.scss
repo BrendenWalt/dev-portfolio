@@ -52,6 +52,9 @@
       z-index: -1;
     }
   }
+  @include md {
+    padding: 2.5rem 5%;
+  }
 }
 
 .experienceResumeBtn {

@@ -93,6 +93,10 @@
       left: -$offset;
     }
   }
+  @include md {
+    width: 100%;
+    margin-bottom: calc(10vh + 40px);
+  }
 }
 
 .experienceRange {
@@ -119,6 +123,10 @@
   z-index: 2;
   p {
     font-size: 1.25rem;
+  }
+  @include md {
+    left: -20px;
+    width: 100%;
   }
 }
 
