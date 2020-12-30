@@ -3,7 +3,7 @@
 .hero {
   height: 90vh;
   position: relative;
-  @include md {
+  @include sm {
     height: 100vh;
   }
 }
@@ -46,7 +46,7 @@
   justify-content: center;
   position: relative;
   z-index: 1;
-  @include md {
+  @include sm {
     flex-direction: column;
   }
 }
@@ -55,7 +55,7 @@
   position: relative;
   padding: 10px 0.75rem 0.25rem;
   text-align: center;
-  @include md {
+  @include sm {
     margin-top: 20%;
   }
 }
@@ -87,7 +87,7 @@
     border-top: 2px solid $color-white;
     width: 5%;
   }
-  @include md {
+  @include sm {
     width: 90%;
   }
 }
@@ -98,7 +98,7 @@
   top: calc(50% + 10px);
   transform: translateY(-50%);
   z-index: 5;
-  @include md {
+  @include sm {
     bottom: 0;
     position: relative;
     transform: translateY(0);

@@ -93,9 +93,13 @@
       left: -$offset;
     }
   }
-  @include md {
-    width: 100%;
+  @include sm {
+    width: 95%;
     margin-bottom: calc(10vh + 40px);
+    &:nth-of-type(2n) {
+      padding-left: 1.25rem;
+      align-self: center;
+    }
   }
 }
 
@@ -124,9 +128,13 @@
   p {
     font-size: 1.25rem;
   }
-  @include md {
+  @include sm {
+    // position: relative;
+    transform: translateY(-4rem);
+    top: 0;
     left: -20px;
     width: 100%;
+    padding-right: 1.5rem;
   }
 }
 
@@ -135,6 +143,10 @@
     padding: 0.5rem 1.5rem 0.5rem 7.5rem;
     right: -35px;
     left: auto;
+    @include sm {
+      padding-left: 1.5rem;
+      right: -20px;
+    }
   }
 }
 

@@ -26,15 +26,15 @@ const IndexPage = ({data}) => {
       </Helmet>
       <Layout>
         <SEO />
-        <Hero title={data.site.siteMetadata.title} subtitle={data.site.siteMetadata.subtitle} />
-        <Portfolio />
-        {/* <PhotoDivider /> */}
-        <About />
-        <Experience />
-        <Photog />
-        <Instagram />
-        <Contact />
-        <ToTop />
+          <Hero title={data.site.siteMetadata.title} subtitle={data.site.siteMetadata.subtitle} />
+          <Portfolio />
+          {/* <PhotoDivider /> */}
+          <About />
+          <Experience />
+          <Photog />
+          <Instagram />
+          <Contact />
+          <ToTop />
       </Layout>
     </div>
     

@@ -7,6 +7,9 @@
   justify-content: center;
   max-width: 1400px;
   margin: 0 auto;
+  @include sm {
+    flex-direction: column;
+  }
 }
 
 .contactForm {
@@ -24,14 +27,14 @@
   }
   button {
     cursor: pointer;
-    max-width: 430px;
+    // max-width: 430px;
     margin: 0 auto;
-    width: 100%;
+    // width: 100%;
   }
   &:before {
     content: '';
     position: absolute;
-    height: 65%;
+    height: 100%;
     width: 70%;
     bottom: -20px;
     right: -20px;
@@ -41,6 +44,13 @@
   @include xl {
     width: auto;
     margin-left: calc(3vw + 100px);
+  }
+  @include sm {
+    margin: 1.85rem auto;
+    &:before {
+      height: 90%;
+      width: 90%;
+    }
   }
 }
 
@@ -78,11 +88,36 @@
     transform: rotate(-180deg);
     z-index: 2;
   }
+  @include sm {
+    position: relative;
+    padding-top: 5vh;
+    margin-bottom: 20px;
+    h2 {
+      writing-mode: initial;
+      transform: rotate(0);
+    }
+    &:before {
+      height: 33%;
+      width: 100%;
+      bottom: 0;
+      transform: translate(-85%, 100%);
+    }
+    &:after {
+      height: 100%;
+      top: 0;
+      right: 50%;
+      width: 110vw;
+      transform: translate(50%, 0);
+    }
+  }
 }
 
 .formContainer {
   flex: 0.75 1 725px;
   max-width: 1100px;
+  @include sm {
+    flex-basis: initial;
+  }
 }
 
 .formField {
@@ -111,6 +146,11 @@
       
     }
   }
+  @include sm {
+    input {
+      width: 100%;
+    }
+  }
 }
 
 .formMessage {
@@ -127,12 +167,19 @@
   textarea {
     resize: none;
   }
+  @include sm {
+    padding: 1.75rem 20px;
+  }
 }
 
 .contactModule {
   background-color: $color-primary;
-  padding: 4rem calc(1% + 20px) 4rem 2rem;
+  padding: 4rem calc(1% + 20px) 2rem 2rem;
   overflow: hidden;
+  @include sm {
+    padding-top: 0rem;
+    padding-bottom: 1rem;
+  }
 }
 
 .contactSocial > div {

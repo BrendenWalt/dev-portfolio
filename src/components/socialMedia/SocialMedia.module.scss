@@ -29,7 +29,7 @@
 
 .socialmedia.socialmediaVertical ul li {
   display: block;
-  @include md {
+  @include sm {
     display: inline-block;
   }
 }

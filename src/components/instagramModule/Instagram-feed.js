@@ -32,7 +32,7 @@ const Instagram = () => {
 
         <div className={Styles.instagramOverlay}>
             <a href="https://www.instagram.com/brenden_walters/" target="_blank" rel="noopener noreferrer">
-              <FaInstagram /> | Follow me on instagram
+              <FaInstagram /> <span className="hide-mobile">|</span> Follow me on instagram
             </a>
         </div>
       </div>

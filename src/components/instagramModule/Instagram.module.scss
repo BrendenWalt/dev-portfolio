@@ -17,6 +17,9 @@
     opacity: 0.6;
     z-index: 1;
   }
+  @include sm {
+    grid-template-columns: repeat(2, 1fr);
+  }
 }
 
 .instagramOverlay {
@@ -38,6 +41,12 @@
   }
   svg {
     vertical-align: text-bottom;
+  }
+  @include sm {
+    svg {
+      display: block;
+      margin: 0 auto;
+    }
   }
 }
 .instagram-item {

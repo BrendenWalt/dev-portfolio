@@ -22,22 +22,22 @@ const Hero = (props) => {
 
   return (
     <div className={`${Styles.hero} hero`} name="header-logo" id="header-logo">
-      <BackgroundImage
-        className={Styles.heroBg}
-        fluid={Data.file.childImageSharp.fluid}
-      >
-        <div className={Styles.heroBody}>
-          <div className={Styles.heroInfoCard}>
-            <h1 className={Styles.heroTitle}>{props.title}</h1>
-            <h3 className={Styles.heroSubtitle}>{props.subtitle}</h3>
-            <div className={Styles.heroInfoCardBox}></div>
+        <BackgroundImage
+          className={Styles.heroBg}
+          fluid={Data.file.childImageSharp.fluid}
+        >
+          <div className={Styles.heroBody}>
+            <div className={Styles.heroInfoCard}>
+              <h1 className={Styles.heroTitle}>{props.title}</h1>
+              <h3 className={Styles.heroSubtitle}>{props.subtitle}</h3>
+              <div className={Styles.heroInfoCardBox}></div>
+            </div>
+            <div className={Styles.heroSocialmedia}>
+              <SocialMedia isVertical={true} />
+            </div>
           </div>
-          <div className={Styles.heroSocialmedia}>
-            <SocialMedia isVertical={true} />
-          </div>
-        </div>
-        <div className={Styles.heroBgEffects}></div>
-      </BackgroundImage>
+          <div className={Styles.heroBgEffects}></div>
+        </BackgroundImage>
     </div>
   )
 }
